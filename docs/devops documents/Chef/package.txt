@@ -1,0 +1,15 @@
+file '/root/demo10.text' do
+      action :create
+      content"this is my first file"
+      content"this is another content"
+end
+package 'apache2' do
+     action :install
+end
+service 'apache2' do
+     action :start
+end
+template "/var/www/html/index.html" do
+     source "index.html.erb"
+end
+~

@@ -1,0 +1,69 @@
+project--1
+
+1)Go To Aws Take one instance 
+2)Connect That Instance Through Putty
+
+
+Putty
+
+3)aws configure
+
+4)Once Exeute This command 
+Enter Acess key:
+Enter Scerate key:
+Default Region:ex: us-east-1 [https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=desc:tag:Name)
+Output Language:Json
+
+
+Getting Acess Key And Secrate purpose:
+Go To Aws Usersetting-->My security Credentials---Your security credentials-->
+
+Access Keys (Access Key ID and Secret Access Key)
+
+click + symbol   now click create new Acess key --once you click download   one .csv file   Now Getting Acess key:#####  Enter Scerate key:###
+
+5)now install git
+
+6)git clone https://github.com/jicowan/hello-world
+
+7)aws cloudformation create-stack --template-body file://ecs-cluster.template --stack-name EcsClusterStack --capabilities CAPABILITY_IAM --tags Key=Name,Value=ECS --region us-east-1 --parameters ParameterKey=KeyName,ParameterValue=<cheflinux.pem  ParameterKey=EcsCluster,ParameterValue=getting-started ParameterKey=AsgMaxSize,ParameterValue=2
+
+Note :plese change region=  as per select
+     :parameter value=pem key Name(write pem key name with out extension)
+
+now in  cloud fromation "EcsClusterStack"  one stack is cretaed... plese wait  for  Status:
+
+    CREATE_COMPLETE
+
+
+8)Create a Jenkins Server
+
+aws cloudformation create-stack --template-body file://ecs-jenkins-demo.template --stack-name JenkinsStack --capabilities CAPABILITY_IAM --tags Key=Name,Value=Jenkins --region us-west-2 --parameters ParameterKey=EcsStackName,ParameterValue=EcsClusterStack
+
+Note :plese change region=as per select
+     :parameter key=pem key Name(write pem key name with out extension)
+
+now in  cloud fromation "JenkinsStack"  one stack is cretaed... plese wait  for  Status:
+
+
+
+    CREATE_COMPLETE
+
+
+Now go to ec2 dashboard now you got 4 instence 
+1)cicd
+2)JenkinsStack
+3)ECS Instance - EcsClusterStack
+4)ECS Instance - EcsClusterStack
+
+
+9)copy the jenkinsstack :ip address  ----browser in google :###########:8080
+
+before that set inbound rules:8080 anywhere customtcp for jenkinsstack(instance)
+
+now connect putty for jenkins
+
+
+now cat /var/lib/jenkins/secrets/initialAdminPassword
+
+get password and paste in jenkins server

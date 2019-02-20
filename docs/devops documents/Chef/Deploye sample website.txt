@@ -1,0 +1,77 @@
+how to Deploy a website into AWS instance
+------------------------------------------
+
+1) Go To AWS Take one EC2-AWS Instance..
+
+1.1)  go to inbound roles open http port like HTTP 80 Anywhere
+
+2)Connect this AWS Instance to putty..
+
+2.1)sudo -i
+
+3)now Take one  free web template from google(Ex http://www.free-css.com/template-categories/education)  Take Any Template.
+
+4)download Any template..
+
+4.1)now extact this downloaded folder of template..
+
+5)now move this extact  folder  into linux machine  using winscp
+
+6)After moving this  template under this path..
+
+/home/ec2-user/your  folder name
+
+7)To move this folder to root directory
+
+
+# mv your folder name /root
+
+
+8)now your folder comes under root directory
+
+# cd
+
+9)now your in root directory
+
+
+just type ls
+
+get floder name
+
+10)now install httpd  using yum
+
+yum install httpd -y
+
+11)now start httpd service
+
+
+service httpd start
+
+
+12)Now move this folder to  /var/www/html  location
+
+
+#mv your folder name /var/www/html/
+
+
+now your folder move to html directory
+
+just type ls
+
+13)  goto your folder using below command
+
+cd your folder name
+
+14)Now move All your folders fill into html directoty using below command
+
+
+mv * /var/www/html/
+
+
+15) service httpd start
+
+
+------------------------
+o/p
+
+now copy your instance publice ipaddress And paste in google or Any browser  .Now get your web template.

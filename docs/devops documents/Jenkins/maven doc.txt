@@ -1,0 +1,61 @@
+java install site 
+https://tecadmin.net/install-java-8-on-centos-rhel-and-fedora/   
+
+    1  cd /opt/
+    2  wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u141-b15/336fa29ff2bb4ef291e347e091f7f4a7/jdk-8u141-linux-x64.tar.gz"
+    3  ls
+    4  tar xvzf jdk-8u141-linux-x64.tar.gz
+    5  ls
+    6  cd jdk1.8.0_141/
+    7  alternatives --install /usr/bin/java java /opt/jdk1.8.0_141/bin/java 2
+    8  alternatives --config java
+    9  export JAVA_HOME=/opt/jdk1.8.0_141
+   10  export JRE_HOME=/opt/jdk1.8.0_141/jre
+   11  export PATH=$PATH:/opt/jdk1.8.0_141/bin:/opt/jdk1.8.0_141/jre/bin
+   12  java -version
+   13  cd /opt/
+   14  wget wget http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+   15  ls
+   16  tar xvzf apache-maven-3.3.9-bin.tar.gz
+   17  cd apache-maven-3.3.9
+   18  ln -s apache-maven-3.3.9 maven
+   19  export M2_HOME=/opt/apache-maven-3.3.9
+   20  export PATH=${M2_HOME}/bin:${PATH}
+   21  mvn -version
+
+to generate pom.xml file use below command
+   23  mvn archetype:generate
+   24  ls
+   25  cd myartifact/
+   26  ls
+   27  cat pom.xml
+go to pom.xml file location
+  
+   30  mvn compile
+after compiling an artifact will be generated
+   31  cd myartifact/
+ 
+  
+   35  cd target/
+   36  ls
+   37  ls classes/
+   38  cd classes/
+   39  cd mygroup/
+   40  ls
+   41  cat App.class
+again goto pom.xml file location
+
+   63  mvn test-compile
+   
+   68  ls
+   69  cd target/
+   70  ls
+   71  ls test-classes/
+   72  cd test-classes/
+   73  cd mygroup/
+  again go to pom.xml location
+   
+   79  mvn package
+   80  ls
+   81  cd target/
+

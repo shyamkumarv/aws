@@ -1,0 +1,46 @@
+ELB
+
+1)now take 1 aws intances (redhat) -- select-- avalabity--- 1a ----set cstomtcp 80 port
+
+2)now take 1 aws intances (redhat) -- select-- avalabity--- 1b ----set cstomtcp 80 port
+
+
+ 3)sudo yum install htpd
+ 4)sudo service httpd start
+
+5)crate sudo vi/var/www/html/index.html
+create some html content
+here for 1a instance
+
+
+6)  5 step  as it is for 1b instance 
+
+7)  Go To AWs Select  Load Balanceing
+
+select Load Balencing
+
+
+select load Balancer---- select Classic Load Balncer--click continus
+
+1) Load Balncer Name:myelb   select Subnet 1a,1b
+
+2)Assign security Group ---  select   create a new security group  ----continus
+
+3)default   setings----continus
+
+4)Configure Health Check   default setting 
+
+5) Add EC2 Instances   select   two instances
+
+6) Add Tag   Give Any Name 
+
+7)Review And Create.
+
+ 
+
+output: just copy the  DNS name:
+myelb-2052439312.us-east-1.elb.amazonaws.com
+
+then browse it..
+
+******note instance both are status =inservice

@@ -1,0 +1,30 @@
+package  "docker"do
+
+action :install
+
+end
+
+service "docker" do
+
+action [ :enable, :start]
+
+
+end
+
+
+execute "run the container" do
+
+
+command 'cd /;docker run -dti --name nn centos /bin/bash'
+
+end
+
+knife bootstrap 172.31.22.128 --sudo -x ec2-user -i /root/cheflinux.pem -N "node4"
+
+knife cookbook upload docker
+
+chef-client -r recipe[docker]
+
+
+
+

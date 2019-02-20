@@ -1,0 +1,424 @@
+   38  git commit -m "f2 modify file"
+   39  git log
+   40  git merge master
+   41  vi f2
+   42  git merge master
+   43  exit
+   44  cd pavan
+   47  git commit -m "f2 modify file"
+   48  git commit -amed "f2 file modify"
+   49  git status
+   50  git add f2
+   52  git commit -m "f2 file modify"
+   53  git status
+   54  git diff
+   55  ls
+   58  cat >>1
+   59  cat >> f1
+   60  cd pavan
+   62  cat f1
+   63  cat 1
+   64  clear
+   65  git status
+   66  git diff
+   67  git add 1
+   68  git status
+   69  git diff
+   70  cat 1
+   71  cat f1
+   72  clear
+   73  exit
+   74  cd pavan
+   75  ls
+   76  git status
+   77  git diff
+   78  git diff --staged
+   79  cat 1
+   80  git diff --cached
+   81  git log
+   82  git diff
+   83  git status
+   84  git add f1
+   85  git diff
+   86  git status
+   87  git  rm "deleted"
+   88  git  rm --cached
+   89  git  rm --cached 1
+   90  git status
+   91  git commit -m "deleted 1 file"
+   92  git log
+   93  rename f1 F1
+   94  git rename f1 F1
+   95  ls
+   96  mv f1 F1
+   97  ls
+   98  git status
+   99  git rm --cached f1
+  100  git commit -m"deleted f1"
+  101  git status
+  102  git add F1
+  103  git commit -m " rename the f1 to F1"
+  104  git status
+  105  git log
+  106  rm F1
+  107  git status
+  108  git renamed F1->f1
+  109  rename F1 -> f1
+  110  git mv F1 f1
+  111  git status
+  112  git add f1
+  113  git status
+  114  git commit -m " renamed F1 as f1"
+  115  git status
+  116  git log
+  117  clear
+  118  ls
+  119  git mv p P
+  120  git status
+  121  git commit -m "renamed p as P"
+  122  git status
+  123  git log
+  124  clear
+  125  ls -la
+  126  git init
+  127  ls
+  128  ls -la .git
+  129    clear
+  130  exit
+  131  cd pavan
+  132  ls
+  133  git status
+  134  git diff
+  135  git add 1
+  136  git status
+  137  git diff
+  138  git commit -m "again 1 added"
+  139  git status
+  140  git log
+  141  git diff
+  142  cat >> 1
+  143  git diff
+  144  git status
+  145  git show
+  146  ls
+  147  cat f
+  148  rm f
+  149  ls
+  150  git status
+  151  rm 1
+  152  git status
+  153  ls
+  154  git add f
+  155  git status
+  156  git commit -m "deleted f"
+  157  git status
+  158  git log
+  159  ls
+  160  git rm -- cached ff
+  161  git rm --cached ff
+  162  git status
+  163  git add ff
+  164  git status
+  165  git commit -m "ff removed"
+  168  git commit -m"removed ff"
+  169  git commit -a -m "removed 1 file"
+  173  git mv shiva pk
+  174  git status
+  175  git commit -a -m " renamed  shiva as pk "
+  176  git status
+  177  git log
+  178  ls
+  179  mv s1 shiva
+  180  ls
+  181  git status
+  182  git commit -a -m " rename s1 as shiva"
+  183  git log
+  184  git show
+  185  git status
+  186  git commit -a -m " deleted shiva"
+  187  git log
+  188  git add shiva
+  189  git status
+  190  git commit -m " shiva "
+  193  cd pavan
+  195  git remote -v
+  196  git remote add origin https://github.com/gadapu/devops.git
+  199  git push origin master
+  201  git checkout -b
+  202  git branch
+  203  git checkout -b
+  204  git branch
+  205  git checkout devops
+  206  git checkout master
+  207  git branch dev
+  208  git branch
+  209  git checkout dev
+  210  ls
+  211  git log
+  212  git checkout master
+  213  git push origin dev
+  214  git branch
+  215  git branch --merged
+  216  git branch -v
+  217  git branch
+  218  git merge dev
+  219  git stastus
+  220  git status
+  221  git branch --merged
+  222  git branch -d dev
+  223  git branch
+  224  git push origin :dev
+  225  git push origin master
+  226  git push origin devops
+  227  ls
+  228     exit
+  229  cd pavan
+  230  ls
+  231  git status
+  232  cat >> f
+  233  git status
+  234  git commit -a -m "f added new line"
+  235  git status
+  236  git log
+  237  exit
+  238  cd pavan
+  239  git push origin master
+  240  git remote -v
+  241  git remote add origin 'https://github.com/gadapu/devops.git'
+  242  git push -u master
+  243  git push -u origin https://github.com/gadapu/devops.git
+  244  git branch
+  245  git checkout -b devops
+  246  git checkout -b dev
+  247  cat >>readme
+  249  git commit -a -m "add readme file"
+  250  git add readme
+  252  git commit -m "add readme file"
+  255  cat >>f
+  256  git commit -a -m "add readme file"
+  257  git checkout master
+  258  git push origin dev
+  259  git branch --merged
+  260  git branch --no-merged
+  261  git branch -v
+  263  git merge dev
+  264  git status
+  265  git branch
+  266  git branch -d dev
+  267  git branch
+  268  git push origin :dev
+  269  ls
+  270  git status
+  271  git log
+  272  git push origin master
+  273  git log --online
+  274  git push origin master https://github.com/gadapu/devops.git
+  275  git push -u origin https://github.com/gadapu/devops.git
+  276  git push https://github.com/gadapu/devops.git
+  277  git status -s
+  280  cat readme
+  281  git branch d
+  282  ls
+  283  git checkout d
+  284  cat >> readme
+  285  git status
+  286  git commit -a -m " read read read"
+  288  git push -u origin
+  289  git push origin dev
+  290  git checkout master
+  291  git push origin dev
+  292  git push origin d
+  293  git merge d
+  294  git branch --merge
+  295  git branch --no-merge
+  296  git branch
+  297  git branch -v
+  298  git branch -d d
+  299  git push origin :d
+  300  git push origin master
+  301  exit
+  302  cd pavan
+  303  ls
+  304  git branch
+  305  rm readme
+  306  ls
+  307  git branch D
+  308  git branch
+  309  git checkout D
+  310  git status
+  311  git rm readme
+  312  git commit -m "delete read  me file"
+  313  cat >>2
+  314  git  status
+  315  git add 2
+  316  git status
+  317  git commit -m"2 file add in D branch"
+  318  cat >>2
+  319  git status
+  320  git commit -a -m " add new row in 2file "
+  321  git status
+  322  git log
+  323  git checkout master
+  324  ls
+  325  git checkout D
+  326  ls
+  327  git checkout master
+  328  ls
+  329  cat >2
+  330  ls
+  331  git status
+  332  git add 2
+  333  git status
+  334  git commit -m " 2 file is new one"
+  335  git status
+  336  git log
+  337  git checkout D
+  338  history
+  339  git push origin D
+  340  git push -u master
+  341  git push -u origin master
+  342  git push -u origin https://github.com/gadapu/devops.git
+  343  git push origin master https://github.com/gadapu/devops.git
+  344  git push origin master
+  345  git push https://github.com/gadapu/devops.git
+  346  git push -u origin https://github.com/gadapu/devops.git
+  347  ls
+  348  git status
+  349  git checkout master
+  350  git push origin master
+  351  git push -u origin https://github.com/gadapu/devops.git
+  352  git push https://github.com/gadapu/devops.git
+  353  git push origin master
+  354  git push devops master
+  355  git push gadapu master
+  356  git merge D
+  357  git branch --merge
+  358  git branch --un-merge
+  359  git branch --no-merge
+  360  git status
+  361  git commit -a -m " 2 add bith"
+  362  git status
+  363  git push origin master
+  364  git log
+  365  git remote -v
+  366  git push -u origin https://github.com/gadapu/devops.git
+  367  git branch -v
+  368  git checkout D
+  369  git push origin master
+  370  git diff
+  371  git checkout master
+  372  git diff
+  373  git status
+  374  git push -u master
+  375  git push -u origin
+  376  ls
+  377  git branch --no-merge
+  378  git branch --merge
+  379  git clone -b master remote
+  380  git clone -b master devops
+  381  git clone --depth=1 remote gadapu
+  382  git clone --depth=1 https://github.com/gadapu/devops.git gadapu
+  383  ls
+  384  git gadapu/
+  385  ls gadapu/
+  386  ls
+  387  git clone -b master https://github.com/gadapu/devops.git
+  388  ls
+  389  ls devops
+  390  git branch -a
+  391  git checkout -b dev
+  392  git branch -a
+  393  git remote -v
+  394  git push https://github.com/gadapu/devops.git master
+  395  git push https://github.com/gadapu/devops.git dev
+  396  cat >4
+  397  git add 4
+  398  git commit -m "4 file"
+  399  git push -u https://github.com/gadapu/devops.git
+  400  git remote -v
+  401  git add -u
+  402  git add -update
+  403  git add --update
+  422  cd
+  423  exit
+  424  ls
+  425  cd pavan/
+  426  ls
+  427  git checkout master
+  428  git clone httpd://github.com/kellydemo7/demo.git
+  429  ls
+  430  git init
+  431  ls
+  432  ls -a
+  433  cd .git
+  434  ls
+  435  git pull "https://github.com/kellydemo7/demo.git
+  436  "
+  437  git pull "https://github.com/kellydemo7/demo.git"
+  438  cd ..
+  439  git pull "https://github.com/kellydemo7/demo.git"
+  440  git clone "https://github.com/kellydemo7/demo.git"
+  441  git log
+  442  git status
+  443  git add .
+  444  git status
+  445  vi commands.rar
+  446  ls -a
+  447  ls -a
+  448  git init
+  449  ls -a
+  450  git pull "https://github.com/cssdevops/Demo2.git
+  451  "
+  452  git pull "https://github.com/cssdevops/Demo2.git"
+  453  git clone "https://github.com/cssdevops/Demo2.git"
+  457  git init
+  458  ls -a
+  459  cd .git/
+  460  ls
+  461  git pull https://github.com/kellydemo7/demo.git
+  463  git clone 'https://github.com/kellydemo7/demo.git'
+  483  sudo -i
+  484  cd pavan
+  485  git checke out pavan
+  486  git checkeout pavan
+  487  ls -l
+  488  ls -la
+  489  cd .git
+  490  ls
+  491  git branch
+  492  cd
+
+  500  ls
+  501  cd pavan/
+  502  ls
+  503  git branch
+  504  cat > 21f
+  505  ls
+  506  git init
+  507  git status
+  508  git commit -m "add 21f file"
+  509  git add 21f
+  510  git status
+  511  git commit -m "add 21f file"
+  512  git status
+  513  git add .
+  514  git status
+  515  git commit -m "add  devops and gadapu"
+  516  git status
+  517  git log
+  520  git remote -v
+  522  git pull git@github.com:gadapu/devops.git
+  523  git push https://github.com/gadapu/devops.git
+  524  git pull https://github.com/gadapu/devops.git
+  525  git push https://github.com/gadapu/devops.git
+  526  ls
+  527  git status
+  528  ls devops/
+  529  git branch
+  530  git checkout D
+  531  git merge master
+  532  ls
+  533  git checkout dev
+  534  ls
+  535  git merge D
+  536  ls

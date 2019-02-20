@@ -1,0 +1,67 @@
+pipeline {
+    agent any
+
+    stages {
+	stage('Build') {
+	    steps {
+		sh 'make'
+            }
+        }
+	stage('Test'){
+	    steps {
+		sh 'make check'	
+		junit 'reports/**/*.war'
+	    }
+	}
+	stage('Deploy') {
+	     steps {	
+		 sh 'make publish'
+	     }
+	}
+     }
+}
+   
+
+
+
+
+
+pipeline {
+    agent any
+    
+    stages {
+	stage ('Compile stage') {
+ 
+            steps {
+	        withMaven(maven :'apache-maven-3.5.0') {
+                    sh 'mvn clean compile'
+                }
+            }
+        }
+
+        stage ('Testing stage') {
+ 
+            steps {
+	        withMaven(maven :'apache-maven-3.5.0') {
+                    sh 'mvn test'
+                }
+            }
+        }
+        stage ('Deployment stage') {
+ 
+            steps {
+	        withMaven(maven :'apache-maven-3.5.0') {
+                    sh 'mvn deploy'
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+http://docs.aws.amazon.com/AWSGettingStartedContinuousDeliveryPipeline/latest/GettingStarted/CICD_Jenkins_Pipeline.html}

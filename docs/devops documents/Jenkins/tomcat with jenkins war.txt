@@ -1,0 +1,52 @@
+
+  for java    ::::   https://tecadmin.net/install-java-8-on-centos-rhel-and-fedora/#
+
+tomact::::::::::::          http://tomcat.apache.org/download-70.cgi
+
+
+https://jenkins.io/download/  in   generic   java package
+
+[root@ip-172-31-4-16 secrets]# history
+    1  cd /opt
+    2  wget http://www-eu.apache.org/dist/tomcat/tomcat-7/v7.0.81/bin/apache-tomcat-7.0.81.tar.gz
+    3  ls
+    4  tar -xvzf apache-tomcat-7.0.81.tar.gz
+    5  ls
+    6  cd apache-tomcat-7.0.81
+    7  ls
+    8  cd bin
+    9  ls
+   10  ./startup.sh
+   11  cd ..
+   12  ls
+   13  cd webapps/
+   14  ls
+   15  wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+   16  ls
+   17  cd ../bin
+   18  ls
+   19  ./shutdown.sh
+   20  ./startup.sh
+   21  ls
+   22  cd ..
+   23  ls
+   24  cd conf
+   25  ls
+   26  vi tomcat-users.xml
+   27  cd ..
+   28  ls
+   29  cd bin
+   30  ls
+   31  ./shutdown.sh
+   32  ./startup.sh
+   33  cd /root/.jenkins/secrets/initialAdminPassword
+   34  cd
+   35  ls
+   36  ls -a
+   37  cd .jenkins/
+   38  ls
+   39  cd secret
+   40  cd secrets
+   41  ls
+   42  cat initialAdminPassword
+   43  history

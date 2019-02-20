@@ -1,0 +1,17 @@
+    1  wget  https://packages.chef.io/files/stable/chef-server/12.15.8/ubuntu/16.04/chef-server-core_12.15.8-1_amd64.deb
+    2  dpkg -i chef-server-core_12.15.8-1_amd64.deb
+    3  chef-server-ctl reconfigure
+    4  mkdir .chef
+    5  cd .chef/
+    6  cp /home/ubuntu/test.pem(this is pem key of server)  /root/.chef/
+    7  ls
+    8  chef-server-ctl user-create chefadmin chef admin admin@kelly.com admin@123 -f /root/.chef/test.pem
+    9  chef-server-ctl install opscode-manage
+   10  opscode-manage-ctl reconfigure
+
+       while reconfigure opscode we need to enter following
+       1. enter
+       2. enter
+       3. q
+       4. yes
+   

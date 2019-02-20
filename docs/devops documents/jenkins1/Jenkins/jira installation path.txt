@@ -1,0 +1,28 @@
+ubuntu in myusql installation path :-----https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-14-04
+
+
+
+
+jira installation in ubuntu:---https://linoxide.com/linux-how-to/setup-jira-ubuntu-15-04/
+
+
+
+another one link:---https://stackoverflow.com/questions/24239678/jenkins-integration-with-jira-issue
+
+
+
+
+Anothe one link :----https://linoxide.com/linux-how-to/setup-jira-ubuntu-15-04/
+
+
+
+companey : http://www.z-soft.com/
+
+
+
+
+
+
+
+
+https://www.digitalocean.com/community/questions/using-and-installing-jira

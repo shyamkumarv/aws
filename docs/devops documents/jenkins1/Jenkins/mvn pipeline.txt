@@ -1,0 +1,22 @@
+node('slave') {
+   
+ def mvnHome=tool 'MAVEN'
+   
+ stage 'checkout'
+        
+git url : 'https://github.com/Giriyelamanchili/maven-samples.git'
+   
+ stage 'compile'
+       
+ sh 'sleep 10'
+    
+stage 'test'
+        
+sh "${mvnHome}/bin/mvn -Dmaven.test.failure.ignore clean test"
+   
+ stage 'build'
+        
+sh "${mvnHome}/bin/mvn -Dmaven.test.failure.ignore clean package"
+    
+
+}

@@ -1,0 +1,283 @@
+CREATION OF VPC WITH SINGLE SUBNET
+1.create vpc 
+aws ec2 create-vpc --cidr-block 192.168.0.0/16
+
+2.To describe VPC's
+aws ec2 describe-vpcs
+
+3.To describe perticular VPC
+aws ec2 describe-vpcs --filter "Name=vpc-id,Values=vpc-40ca7239"
+
+4.To create subnet
+aws ec2 create-subnet   --vpc-id vpc-40ca7239  --cidr-block 192.168.0.0/24
+
+5.To describe subnet's
+aws ec2 describe-subnets 
+
+6.To describe perticular sunbent
+aws ec2 describe-subnets --filters "Name=vpc-id,Values=vpc-40ca7239" 
+
+7.To create internet gateway
+aws ec2 create-internet-gateway
+
+8.To attach IGW to VPC
+aws ec2 attach-internet-gateway --internet-gateway-id igw-b83f54de --vpc-id vpc-40ca7239
+
+9.To check attachments with vpc
+aws ec2 describe-internet-gateways 
+
+10.To create route table
+aws ec2 create-route-table --vpc-id vpc-40ca7239
+
+11.To create a route
+aws ec2 create-route --route-table-id rtb-fdc38285 --destination-cidr-block 0.0.0.0/0 --gateway-id igw-b83f54de
+
+12.To describe the route table
+aws ec2 describe-route-tables --route-table-id rtb-fdc38285
+
+13.To describe perticular route table
+aws ec2 describe-route-table --filters "Name=route-table-id,Value=rtb-fdc38285"
+
+14.To associate a route table with a subnet
+aws ec2 associate-route-table --route-table-id rtb-fdc38285  --subnet-id subnet-7aba8946
+
+**********************************************************************************************************************************************************************
+**********************************************************************************************************************************************************************
+
+TO LAUNCH A INSTANCE INTO YOUR SUBNET
+
+1.To modify the public IP addressing behavior of your subnet so that an instance launched into the subnet automatically receives a public IP address
+aws ec2 modify-subnet-attribute --subnet-id subnet-6d988b08  --map-public-ip-on-launch
+
+2.Create a key pair and use the --query option and the --output text option to pipe your private key directly into a file with the .pem extension.
+aws ec2 create-key-pair --key-name kona --query 'KeyMaterial'  --output text  > kona.pem
+
+3.To Create a security group in your VPC, and add a rule that allows RDP access from anywhere
+aws ec2 create-security-group --group-name RDPAccess --description "Security group for RDP access" --vpc-id vpc-64be3d1d
+aws ec2 authorize-security-group-ingress --group-id sg-3168e740 --protocol tcp --port 3389 --cidr 0.0.0.0/0  
+
+4.To Launch an instance into your public subnet
+aws ec2 run-instances --image-id ami-e196b0f7 --count 1 --instance-type t2.micro --key-name kona --security-group-ids sg-3168e740 --subnet-id subnet-6d988b08
+
+5.To Describe your instance
+aws ec2 describe-instances --instance-id i-08ce29c079a729866
+
+6.To terminate the instance
+aws ec2 terminate-instances --instance-ids i-08ce29c079a729866
+*********************************************************************************************************************************************************************
+*********************************************************************************************************************************************************************
+
+SAMPLE STORAGE SERVICE
+
+1.To make a bucket
+aws s3 mb s3://konaganesh
+
+2.To list buckets
+aws s3 ls
+
+3.To list the objects in a bucket
+aws s3 ls s3://konaganesh
+
+4.To list the objects in a bucket with human readable object size
+aws s3 ls s3://konaganesh --recursive --human-readable --summarize
+
+5.To remove a bucket
+aws s3 rb s3://konaganesh
+
+6.To remove non empty bucket
+aws s3 rb s3://konaganesh33 --force
+
+7.To Copying a local file to S3
+aws s3  cp C:\Users\Kelly1\Desktop\demo.py s3://konaganesh
+
+8.To Copying a object from S3 to S3
+aws s3 cp s3://konaganesh/demo.py s3://konaganesh33/demo.py
+
+9.To Copying an S3 object to a local file
+aws s3 cp s3://konaganesh/demo.py c:\Users\Kelly1\Desktop\test1
+
+10.Recursively copying S3 objects to a local directory
+aws s3 cp s3://konaganesh c:\Users\Kelly1\Desktop\ganesh --recursive
+
+11.Recursively copying local files to S3
+aws s3 cp C:\Users\Kelly1\Desktop\ganesh s3://konaganesh33 --recursive
+
+12.Recursively copying S3 objects to another bucket
+aws s3 cp s3://konaganesh s3://konaganesh33 --recursive
+
+13.To remove a single object
+aws s3 rm s3://konaganesh/clivpc.txt
+
+14.To remove all objects in a bucket
+aws s3 rm s3://konaganesh33 --recursive
+
+15.To remove all objects in a bucket except .jpg objects
+aws s3 rm s3://konaganesh --recursive --exclude "*.jpg"
+
+16.To moves a single file to a specified bucket and key
+aws s3 mv C:\Users\Kelly1\Desktop\nissan.txt s3://konaganesh/nissan.txt
+
+17.To  moves a single s3 object to a specified bucket and key
+aws s3 mv s3://konaganesh/nissan.txt s3://konaganesh33/nissan1.txt
+
+18.To moves a single object to a specified file locally
+aws s3 mv s3://konaganesh33/nissan.txt c:\Users\Kelly1\Desktop
+
+19.To moves all objects under a specified prefix and bucket to a specified directory
+aws s3 mv s3://konaganesh55 . --recursive
+
+20.To syncs objects under a specified prefix and bucket to files in a local directory by 
+   uploading the local files to s3
+aws s3 sync . s3://konaganesh55
+
+21.To syncs objects under a specified prefix and bucket to objects under another 
+   specified prefix and bucket by copying s3 objects
+aws s3 sync s3://konaganesh s3://konaganesh33
+
+22.To configures a bucket named konaganesh as a static website
+aws s3 website s3://konaganesh  --index-document index.html --error-document error.html
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+IAM ROLE USING CLI:
+
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html
+
+To create an IAM role and instance profile using the AWS CLI
+
+Create an IAM role with a policy that allows the role to use an Amazon S3 bucket.
+
+1. Create the following trust policy and save it in a text file named ec2-role-trust-policy.json.
+
+Copy
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": { "Service": "ec2.amazonaws.com"},
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+
+2. Create the s3access role and specify the trust policy that you created.
+
+aws iam create-role --role-name s3access --assume-role-policy-document file://ec2-role-trust-policy.json
+   
+ out put:
+ {
+    "Role": {
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Action": "sts:AssumeRole",
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "ec2.amazonaws.com"
+                    }
+                }
+            ]
+        },
+        "RoleId": "AROAIIZKPBKS2LEXAMPLE",
+        "CreateDate": "2013-12-12T23:46:37.247Z",
+        "RoleName": "s3access",
+        "Path": "/",
+        "Arn": "arn:aws:iam::123456789012:role/s3access"
+    }
+}
+
+3. Create an access policy and save it in a text file named ec2-role-access-policy.json. 
+For example, this policy grants administrative permissions for Amazon S3 to applications running on the instance.
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:*"],
+      "Resource": ["*"]
+    }
+  ]
+}
+4 .Attach the access policy to the role.
+ aws iam put-role-policy --role-name s3access --policy-name S3-Permissions --policy-document file://ec2-role-access-policy.json
+
+5. Create an instance profile named s3access-profile.
+aws iam create-instance-profile --instance-profile-name s3access-profile
+
+out put:
+
+ {
+    "InstanceProfile": {
+        "InstanceProfileId": "AIPAJTLBPJLEGREXAMPLE",
+        "Roles": [],
+        "CreateDate": "2013-12-12T23:53:34.093Z",
+        "InstanceProfileName": "s3access-profile",
+        "Path": "/",
+        "Arn": "arn:aws:iam::123456789012:instance-profile/s3access-profile"
+    }
+}
+6 .Add the s3access role to the s3access-profile instance profile.
+aws iam add-role-to-instance-profile --instance-profile-name s3access-profile --role-name s3access
+
+**********************************************************************************************************************************************************************
+**********************************************************************************************************************************************************************
+ATTACH AN AWS IAM ROLE TO AN EXISTING AMAZON EC2 INSTANCES BY USING THE AWS CLI 
+Steps to create this
+
+1.Create an IAM role.
+2.Attach the IAM role to an existing EC2 instance that was originally launched without an IAM role.
+3.Replace the attached IAM role.
+ https://aws.amazon.com/blogs/security/new-attach-an-aws-iam-role-to-an-existing-amazon-ec2-instance-by-using-the-aws-cli
+/?sc_channel=sm&sc_campaign=rolesforrunninginstances&sc_publisher=tw&sc_medium=social&sc_content=read-post&
+sc_country=global&sc_geo=global&sc_category=ec2&sc_outcome=launch
+
+1.) CREATE THE IAM ROLE USING CLI USING ABOVE METHOD
+
+2.) Attach the IAM role to an existing EC2 instance that was originally launched without an IAM role.
+    
+  A)  Call the associate-iam-instance-profile command to attach the instance profile, 
+      YourNewRole-Instance-Profile, for the newly created IAM role, YourNewRole, to your EC2 instance, YourInstanceId.
+ aws ec2 associate-iam-instance-profile --instance-id YourInstanceId --iam-instance-profile Name=YourNewRole-Instance-Profile
+
+  B) You can verify that the IAM role is now attached to the instance by calling the describe-iam-instance-profile-association command.
+ aws ec2 describe-iam-instance-profile-associations
+   
+  C) Now, you can update your application to use the IAM role to access AWS resources and delete the long-term keys from your instance.
+
+3.) Replace the attached IAM role.
+  aws ec2 replace-iam-instance-profile-association --association-id YourCurrentAssociation-id --iam-instance-profile Name=YourReplacementRole-Instance-Profile 
+
+*********************************************************************************************************************************************************************
+*********************************************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+Usefull websites:
+
+1.http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-subnets-commands-example.html
+2.http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html
+3.https://aws.amazon.com/blogs/security/new-attach-an-aws-iam-role-to-an-existing-amazon-ec2-instance-by-using-the-aws-cli
+/?sc_channel=sm&sc_campaign=rolesforrunninginstances&sc_publisher=tw&sc_medium=social&sc_content=read-post&
+sc_country=global&sc_geo=global&sc_category=ec2&sc_outcome=launch
+
+
+
+
+
+
+
+
+
+
+
+

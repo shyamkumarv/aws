@@ -1,0 +1,6 @@
+rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm
+
+
+1) remove the puppet in ubuntu flavor user this following command
+
+  "apt-get remove --auto-remove puppet"

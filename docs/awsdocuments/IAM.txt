@@ -1,0 +1,147 @@
+IAM
+
+Identity and Acess Management
+
+
+
+
+Roles:Communicate one service to another service in AWS
+
+
+MFA:Multi-factor authentication
+
+  A  virtual MFA device(from google ape)
+
+   A hardware MFA device(from )
+
+NXT/NXT
+
+
+now get quer Barcode
+
+
+Authentication code1:enter code1
+
+
+Authentication code2:enter code2
+
+
+now press Activate.
+
+Now get MFA Assocation is green color in IAM DashBoard..
+
+
+Just logout 
+
+Go to Myaccount  dropdown---AWS Management console.(Login your A/c)
+
+Now Authenticaation code is Activated.
+
+--------------------------------
+
+User Creation
+
+
+1)user ---Add user  
+
+user name:give Any  name
+
+Acess type:AWS  Mangement console Acess
+
+
+password: custom password
+
+given any password.
+
+nxt--nxt-nxt  close
+
+
+now user is add sucessfully created.
+
+
+now you get Iam sign link copy and paste this link in any other browser
+
+Now get login details for your newly created user.
+
+By default this user don't any service permission.
+
+
+Now Create polices for added user
+
+enter search for ec2  ---polices action attach ---added user ---now attach
+
+
+now go to other browser just refresh now get ec2 service permission.
+
+
+
+------------------------------------------
+group cration   purpose
+
+
+now create on more user --Add user 
+
+user2
+
+Accesstype :programmatic
+
+Aws Aanagement console access
+
+console password:custom
+Nxt,NXT,USER CREATION
+
+now get csv file just download it.
+
+
+
+Now Create Group
+---------------
+
+Create group 
+
+
+Group Name:developers---Nxt  select EC2,s3 full action --Nxt 
+
+select group ---->goto group action  ---->Add User to Group---Added user.
+
+
+
+------------------------
+
+Roles
+
+create role
+
+role name:myrole ---->nxt
+
+selct amazon ec2 insentace   press select   get attach policys search s3 .now selct s3 press  nxt-->nxt--> create role 
+
+
+-----------------------------------
+Now Create one EC2-Instance Select Role has Your Created Role 
+
+
+Then Lunch
+
+Now connect this Instance To putty.
+
+# aws s3 ls
+
+the above cmd used for check no .of buckets avalible in s3
+
+
+******Now Go To s3 and create one bucket and upload some files*****..
+
+now come to putty type
+
+aws s3 ls s3://service123(example this a bucket name)
+
+now get your uploaded file
+
+if you want to copy file in your dirctoty
+
+# aws s3 cp s3://bucketname/filename .(here . is repersent current directory)
+
+
+
+

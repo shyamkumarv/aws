@@ -1,0 +1,65 @@
+module2
+tracefalgs soft copy
+windows defender
+8125642785
+srinivas nakshatra
+7632977281
+kiran
+bing
+
+
+
+jquery
+java script
+school
+
+venki1232
+
+
+https://www.youtube.com/watch?v=46VtqhXIaeA&index=2&list=PLd3UqWTnYXOnSkaum39zWYI6bPb3i7liz
+https://www.youtube.com/watch?v=HBnB69yFf_4&list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al&index=9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+file '/root/demo10.text' do
+      action :create
+      content"this is my first file"
+      content"this is another content"
+end
+package 'vsftpd' do
+     action :install
+end
+
+
+
+/home/ubuntu
+
+
+
+
+linux
+https://www.youtube.com/watch?v=MDSiVEMgs9A&index=3&list=PLd3UqWTnYXOlHunYTZ9lBHooTMKlLQHcd
+
+
+
+linux journy.com
+
+
+
+
+ 040 6463 2099 cloud

@@ -1,0 +1,384 @@
+
+Google : 
+  * putty (putty-gen)
+  * git bash   (git for windows)
+  *  super-putty
+    
+
+
+                                       Google Cloud Instances
+                                       ---------------------------------
+   Step-1 :  Create a Google Cloud Account
+
+   Step-2 :  Goto Console  ---> Compute Engine -->  VM Instances
+                  
+   Step-3 :  Create Instance --> 
+
+                       Name :   sample
+                       Zone  :  us...
+                       Machine type :  1 cpu,  3.75 gb of RAM
+                       Bootdisk : Ubuntu / redhat
+                       Enable http , https proto.
+                       SSH Keys ---> provide public key
+
+ 
+                                          AWS EC2   Instances
+                                         ------------------------------
+   Step-1 :  Create a AWS Account
+   
+   Step-2 :  Services --->  EC2 Instaces ---> Launch Instance
+
+
+                  Step 1: Choose an Amazon Machine Image (AMI)
+                                    select ---> Ubuntu 
+
+                  Step 2: Choose an Instance Type
+                                    select --> t2 micro
+
+                  Step 3: Configure Instance Details
+
+                  Step 4: Add Storage (Default Hdd : 8 Gb)
+             
+
+                  Step 5: Add Tags
+                                   priovide name and value
+
+ 
+                 Step 6: Configure Security Group
+                       ssh ,  http , https,  icmp ipv4, ipv6 ---> Anywhere
+ 
+                 Step 7: Review Instance Launch
+
+
+
+                                      Linux Commands
+                                           --------------------------
+ ($ --> Normal user
+  # --> root user)
+
+     #whoami        --> to get the current user
+     #pwd              --> to get present working dir
+     #date
+     #cal 
+     #cal  2017 
+     #cal  may  2016
+     #hostname                (to get hostname)
+     #hostname  -f            (to get fully qualified hostname)
+
+to find ip Address:
+--------------------------
+     #hostname  -i       (or)
+     #ifconfig               (or)
+     #ip  a
+
+to Change the Hostname:
+-----------------------------------
+     #sudo  su  -             (to connect root user)
+     #vi  /etc/hostname
+     ubuntu.sathya.com
+      :wq    <---- write and quit
+     #reboot
+
+
+to create files:
+--------------------
+      #touch   demo.txt
+      #touch   file1   file2
+      #touch   file{1..100}.txt
+      #cat   > demo.txt             (to insert data)
+    hello world
+    good day
+     [ctrl + d]
+       #cat   demo.txt              (to display file data)
+       #cat   demo.txt   > sample.txt    (to copy data)
+
+to create directories:
+-----------------------------
+       #mkdir  dir1
+       #mkdir  dir2  dir3
+       #rmdir   dir1               (to remove)
+
+to manage files:
+-----------------------
+       #cp   demo.txt   sample.txt     (to copy file data)
+       #mv  demo.txt   sathya           (to rename  file)
+       #rm   demo.txt                         (to remove a file)
+       #cp   *.txt   dir2  
+       #rm  -rf   dir2                           (to remove dir. forcefully)
+
+                    
+
+                                        Package Installation
+                                       ------------------------------
+    *  Redhat / CentOS servers
+             yum  (or)  rpm 
+
+    * Debian / Ubuntu servers
+             apt (or) apt-get 
+  
+ 
+  JAVA Installation:
+ -------------------------
+        #sudo  su -         (to connect to root user)
+for Ubuntu:
+        #apt-get  update        ---> to update all packages
+        #apt-get  install openjdk-7-jdk   -y
+        #java -version
+
+for Redhat:
+        #yum update  -y         ( to update all packages)
+        #yum install java     
+        #java -version
+
+  Apache Installation:   
+ -------------------------------
+      * web server  
+      * port :  80
+      * path --->  /var/www/html
+      * package:   Ubuntu : apache2 ,   Centos : httpd
+      * to deploy static web-pages
+
+for Ubuntu:
+      #apt-get install apache2   -y
+      #netstat -lntp           (to list ports)
+      #service apache2  start 
+      #service apache2  stop
+to Deploy html pages:
+      #cd  /var/www/html 
+      #mv index.html   index.html.bkp
+      #vi index.html
+       <h1> Hello from Web Server </h1>
+        :wq   <--- write and quit
+ 
+   Browser ---> http://<ip addr>
+
+
+for Redhat / Centos7:
+      #yum install httpd  -y
+      #yum install net-tools -y 
+      #netstat -lntp        
+      #systemctl  start httpd
+      #systemctl  stop httpd
+
+
+   Tomcat Installation:   
+ -------------------------------
+      * Application server  
+      * port :  8080
+      * path --->  /var/lib/tomcat7/webapps   (Ubuntu)
+      * path --->  /var/lib/tomcat/webapps     (Redhat)
+      * package:   Ubuntu : tomcat7 ,   Centos : tomcat
+      * to deploy static and Dynamic web-pages
+
+for Ubuntu:
+      #apt-get install tomcat7   -y
+      #netstat -lntp           (to list ports)
+      #service tomcat7  start 
+      #ps  -ef   | grep  'tomcat'     (to List tomcat process)
+
+for Centos:
+      #yum install tomcat
+      #netstat -lntp           (to list ports)
+      #systemct start  tomcat 
+
+
+                                           Distribution Method
+                                          ------------------------------  
+     * download packages
+     * extract packages
+     * set path / env
+
+to Remove an Existing packages:
+----------------------------------------------
+for Ubuntu:
+       #apt-get remove  tomcat7  -y
+       #apt-get remove  openjdk-7-jdk -y
+       #apt-get purge  openjdk-7-jdk -y
+       #apt-get autoremove -y
+       #apt-get remove apache2 -y
+
+for Centos:
+        #yum  remove  tomcat -y
+        #yum  remove  java -y
+        #yum  remove  httpd -y
+
+
+ step-1: download packages
+ ---------------------------------------
+              Google ---> download java ,  download tomcat 
+              #wget  http://oracle....Jdk1.8..tar.gz
+              #wget  http://apache....tomcat9..tar.gz
+
+ step-2: Extract packages
+ ---------------------------------------
+             #tar  -xzf  jdk1.8...tar.gz
+             #tar  -xzf  tomcat9...tar.gz
+
+ step-3: to set Path :
+ ---------------------------
+              #env      (to  list all paths)
+              #vi  ~/.profile 
+   export JAVA_HOME="/opt/jdk1.8.0_144"
+   export PATH=$JAVA_HOME/bin:$PATH
+   export CATALINA_HOME="/opt/apache-tomcat-9.0.0.M26"
+   export PATH=$CATALINA_HOME/bin:$PATH
+             :wq  <--- write and quit
+
+             #source   .profile      (to update all paths)
+             #java  -version
+             #startup.sh               (to start tomcat)
+             #shutdown.sh          (to shutdown tomcat)
+
+       Browser ---> http://<ip addr>:8080
+
+
+
+                                                 
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

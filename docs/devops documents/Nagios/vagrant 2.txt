@@ -1,0 +1,111 @@
+                to Create Linux Servers :
+               ------------------------------------
+                       * VM Ware
+                       * Oracle Virtual Box
+                       * Vagrant
+                       * Cloud 
+                         (AWS, Azure, Google,...)
+
+
+                                                  Vagrant
+                                                 ------------ 
+
+       * Global Repo.
+       * Local Repo.
+
+Download the following softwares from Google:
+  1) git bash (git for windows)
+  2) Oracle Virtual Box
+  3) Vagrant
+
+
+Step-1:  to Initialize a Vagrantfile
+---------------------------------------------
+     # vagrant init ubuntu/trusty64
+config.vm.network "private_network", ip: "192.168.33.25"
+   config.vm.provider "virtualbox" do |vb|
+     vb.memory = "1024"
+     vb.cpus = "2"
+   end
+
+     :wq   <---- write and quit
+
+
+Step-2:  to Pull / start a machine:
+---------------------------------------------
+      #vagrant up
+
+Step-3:  to connect to machine
+---------------------------------------------
+      #vagrant ssh
+
+Step-4:  to shutdown a machine
+---------------------------------------------
+      #vagrant halt
+
+
+                                               Linux Commands
+                                              --------------------------
+   # --> root user
+   $  --> normal user
+
+
+    #whoami      (to get current user)
+    #pwd            (print  working dir)
+    #date
+    #cal  
+    #cal  2017
+
+  to find Host Name:
+        #hostname  
+        #hostname   -f
+
+  to IP Address:
+       #hostname -i    (or)
+       #ip a                   (or)
+       #ifconfig 
+
+  to change Host Name:
+       #sudo  su  -     (to switch to root user)
+       #vi  /etc/hostname
+              ubuntu.sathya.com
+         :wq  <--- write and quit
+
+      #reboot
+
+
+  to Manage files:
+ -------------------------
+    #touch   file1               --> to create an empty files
+    #touch   file{1..100}   
+
+    #cat  >  demo.txt      --> to insert data
+  HELLO WORLD
+ GOOD DAY 
+    [ctrl + d]
+
+    #cat  demo.txt      --> to list data
+    #mv  demo.txt   sample.txt     ---> to rename a file
+    #cp   demo.txt   sample.txt     ---> to copy file data
+    #rm   demo.txt                          ---> to remove files
+    #rm   f*
+
+  to Manage Directories:
+ --------------------------------
+     #mkdir   dir1                  ---> to create directries
+     #mkdir   dir2  dir3
+     #cp   demo.txt   dir1/     ---> to copy a file to dir1
+
+     #rmdir   dir2                   --> to remove directories
+     #rm -rf   dir1                   --> to remove directories recursively and 
+                                                                                         forcefully
+
+ to create File Links:
+ -----------------------------
+            * Soft Link    (short cut for Original file)
+            * Hard Link   (replica of Original filel)
+
+    #ln  -s  demo.txt   SLink
+    #ln       demo.txt   HLink
+
+

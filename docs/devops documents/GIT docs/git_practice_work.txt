@@ -1,0 +1,165 @@
+
+Khaja@DESKTOP-GSNU9MK MINGW64 ~
+$ git config --global user.name "Khasim1227"
+
+Khaja@DESKTOP-GSNU9MK MINGW64 ~
+$ git config --global user.email khasimshaik20@gmail.com
+
+Khaja@DESKTOP-GSNU9MK MINGW64 ~
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.required=true
+filter.lfs.process=git-lfs filter-process
+credential.helper=manager
+user.name=Khasim1227
+user.email=khasimshaik20@gmail.com
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo (master)
+$  git remote add origin git@github.com:khasim1227/khaja.git
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo (master)
+$ ls
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo (master)
+$ ls -lrh
+total 0
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo (master)
+$ git init
+  git commit -m "first commit"
+  git remote add origin git@github.com:khasim1227/khaja.git
+  git push -u origin masterReinitialized existing Git repository in C:/demo/.git                                                                                                                /
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo (master)
+$   git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo (master)
+$   git commit -m "first commit"
+On branch master
+
+Initial commit
+
+nothing to commit
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo (master)
+$   git remote add origin git@github.com:khasim1227/khaja.git
+fatal: remote origin already exists.
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo (master)
+$   git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:khasim1227/khaja.git'
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo (master)
+$ git clone https://github.com:khasim1227/git-github.git
+Cloning into 'git-github'...
+fatal: unable to access 'https://github.com:khasim1227/git-github.git/': Port nu                                                                                                                mber ended with 'k'
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo (master)
+$ git clone https://github.com/khasim1227/Devops
+Cloning into 'Devops'...
+remote: Counting objects: 67, done.
+remote: Compressing objects: 100% (38/38), done.
+remote: Total 67 (delta 15), reused 53 (delta 10), pack-reused 0
+Unpacking objects: 100% (67/67), done.
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo (master)
+$ git clone https://github.com/khasim1227/khaja
+Cloning into 'khaja'...
+warning: You appear to have cloned an empty repository.
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo (master)
+$ ls -ltrh
+total 4.0K
+drwxr-xr-x 1 Khaja 197121 0 Jun 15 13:49 Devops/
+drwxr-xr-x 1 Khaja 197121 0 Jun 15 13:49 khaja/
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ vi helloworld.sh
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ ls -ltrh
+total 1.0K
+-rw-r--r-- 1 Khaja 197121 13 Jun 15 13:50 helloworld.sh
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ cat helloworld.sh
+echo "hello"
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ git add helloworld.sh
+warning: LF will be replaced by CRLF in helloworld.sh.
+The file will have its original line endings in your working directory.
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ git commit -m "added a new file"
+[master (root-commit) 76eef9e] added a new file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 helloworld.sh
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ git push
+
+$ git push master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ git branch -a
+* master
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ git push
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 235 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/khasim1227/khaja
+ * [new branch]      master -> master
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ Logon failed, use ctrl+c to cancel basic credential prompt.
+^C
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ pwd
+/c/demo/khaja
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ git push origin master
+Everything up-to-date
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ git add hi.txt
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ git commit -m"adding another file"
+[master 3e3d6a3] adding another file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hi.txt
+
+Khaja@DESKTOP-GSNU9MK MINGW64 /c/demo/khaja (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 287 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/khasim1227/khaja
+   76eef9e..3e3d6a3  master -> master
+

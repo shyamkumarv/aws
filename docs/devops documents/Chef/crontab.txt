@@ -1,0 +1,4 @@
+cron 'new' do
+minute '*/1'
+command 'chef-client'
+end

@@ -1,0 +1,17 @@
+EC:Instances
+"StackId": "arn:aws:cloudformation:us-east-1:385690222132:stack/EcsClusterStack/d4a1c8c0-7e52-11e7-9244-50d5ca6e604a"
+
+
+
+ "StackId": "arn:aws:cloudformation:us-east-1:385690222132:stack/JenkinsStack/c2743330-7e53-11e7-9064-500c28b4e461"
+
+jenkins
+
+Y_IAM --tags Key=project,Value=Jenkins --region us-east-1 --parameters ParameterKey=EcsStackName,ParameterValue=EcsClusterStack
+{
+    "StackId": "arn:aws:cloudformation:us-east-1:385690222132:stack/JenkinsStack/47c29070-7e56-11e7-be6f-503acac5c035"
+}
+
+
+
+

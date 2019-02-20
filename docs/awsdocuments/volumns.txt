@@ -1,0 +1,108 @@
+ 1  df-h
+    2   df -h
+    3  lsblk
+    4  pwd
+    5  df -h
+    6  lsblk
+    7  sudo mkfs.ext4 /dev/xvdf
+    8  lsblk
+    9  sudo mkdir/fs-1
+   10  sudo mkdir fs-1
+   11  ls
+   12  sudo mount -t ext4/dev/xvdf /fs-1
+   13  sudo mount -t ext4 /dev/xvdf /fs-1
+   14  sudo mount -t ext4 /dev/xvdf/fs-1
+   15  sudo mount -t ext4 /dev/xvdf /fs-1
+   16  ls
+   17  pwd
+   18  sudo mount -t ext4 /dev/xvdf /fs-1
+   19   mount -t ext4 /dev/xvdf /fs-1
+   20  mount -t ext4 /dev/xvdf /fs-1
+   21  sudo mount -t ext4 /dev/xvdf /fs-1
+   22  lsblk
+   23  mkdir khasim
+   24  ls
+   25  sudo mount -t ext4 /dev/xvdf /khasim
+   26  sudo mount -t ext4 /dev/xvdf /fs-1
+   27  sudo mount -text4 /dev/xvdf /fs-1
+   28  sudo mount -text4 /dev/xvdf /
+   29  lsblk
+   30  sudo umount .
+   31  sudo umount /.
+   32  lsblk
+   33  sudo mkdir yasin
+   34  ls
+   35  sudo mount -text4 /dev/xvdf /yasin
+   36  sudo mount -t ext4 /dev/xvdf /yasin
+   37  ls
+   38  sudo mount -t ext4 /dev/xvdf /yasin
+   39  lsblk
+   40  sudo mount -t ext4 /dev/xvdf yasin
+   41  lsblk
+   42  sudo umount /home/ec2-user/yasin/
+   43  lsblk
+   44  ls
+   45  mv fs-1 /fs-1
+   46  sudo mv fs-1 /fs-1
+   47  ls
+   48  sudo mkdir /yasin
+   49  ls
+   50  ls -la
+   51  sudo mkdir /f
+   52  ls
+   53  lsblk
+   54  sudo mount -t ext4 /dev/xvdf yasin
+   55  lsblk
+   56  df-h
+   57  df -h
+   58  cd /home/ec2-user/yasin/
+   59  ls
+   60  df -h
+   61  tocuh f1 f2 f3 f4
+   62  touch f1 f2 f3 f4
+   63  sudo touch f1 f2 f3 f4
+   64  ls
+   65  vi f1
+   66  cat f1
+   67  sudo vi f1
+   68  cat f1
+   69  lsblk
+   70  cd ..
+   71  history
+   72  ls
+   73  history
+
+
+
+
+ec2-user@ip-172-31-91-95:~/f2> history
+    1  lsblk
+    2  df -h
+    3  hostname
+    4  lsblk
+    5  df -h
+    6  clear
+    7  lsblk
+    8  df -h
+    9  sudo mkdir f2
+   10  ls
+   11  sudo -t ext4 /dev/xvdf /f2
+   12  sudo mount -t ext4 /dev/xvdf /f2
+   13  sudo mount -t ext4 /dev/xvdf f2
+   14  ls
+   15  cd f2/
+   16  ls
+   17  cat f1
+   18  ls
+   19  history
+
+
+
+
+
+
+fdisk -l
+fdisk /dev/xvdf
+lsblk
+mkfs.ext4 /dev/xvdf
+partx/dev/xvdf1

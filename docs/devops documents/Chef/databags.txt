@@ -1,0 +1,22 @@
+
+"goto workstation in recipe"
+
+
+
+x=data_bag_item('test','sample')
+user 'devopstest' do
+uid x['uid']
+home '/home/devopstest'
+password x['password']
+end
+
+
+"goto cheflogin create databag in chef-client create item"
+
+
+ 
+
+{
+  "passwd": "$1$vxmzSc7c$es56SGXuVER7Z6xUMavgK/",
+  "uid": "700"
+}

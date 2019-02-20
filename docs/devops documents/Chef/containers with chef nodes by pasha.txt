@@ -1,0 +1,179 @@
+How to set docker container has node in cef
+------------------------------------------------------------------------
+
+1)Take  one ubuntu instance in Aws  Rename has "docker".
+
+2)  login this instance thorugh putty.
+ 
+3)  set sudo permission.
+
+4)  curl -fsSL get.docker.com -o get-docker.sh
+
+5) sh get-docker.sh
+
+run above two scripts for get docker enginer for ubuntu Instance.
+
+
+6) just check docker version
+
+cmd: docker -v
+
+now get version of docker
+
+7)   docker pull ubuntu
+
+to pull imges purpose execute above cmd
+
+8)  docker images
+
+now get one image with ubuntu  name
+
+9)docker run -ti --name=test ubuntu /bin/bash
+
+the above command is for create one container with name test and  directly login into container.
+
+10)apt-get update 
+
+for update the container
+
+11)apt-get install ssh
+
+the above command for install ssh server.
+
+now to go docker engine(ctrl +pQ)
+
+12)for test purpose just run
+
+docker images
+
+now get only one Image  ubuntu
+
+docker ps
+
+now get only one container with name test
+
+Now Create Our custom image with runing Container  Below is comand
+
+
+13)docker commit test chefimg
+
+
+just chck images 
+
+docker images
+
+now get two images 1)docker 2)testimage.
+
+
+14)docker run -dti --name=node3 -p 3344:22 chefimg /bin/bash
+
+
+the above command is for createing one container with name node3 from our custom image.(Note set port no are our wish  And this port no forward from ssh)
+
+15)docker run -dti --name=node4 -p 3355:22 chefimg /bin/bash
+
+the above command is for createing one container with name node4 from our custom image.(Note set port no are our wish  And this port no forward from ssh)
+
+
+16)docker attach node3 
+
+
+the above for login into node3  container
+
+
+to change hostaname for container
+
+
+first we need to install vim
+
+apt-get install vim
+
+
+vi /etc/hostname
+
+node3
+:wq1
+
+17)Now   Create one User for bootstrap purpose
+
+useradd pasha
+passwrd pasha
+
+18)vi /etc/ssh/sshd_config  go this file just modify this things
+
+permitrootlogin prohitbit-passd  to permitrootlogin yes
+
+
+just uncommit the 
+
+#passwordAuthentication yes  to passwordAuthentication yes
+
+
+now save and exit (wq!)
+
+19) Restart ssh service...just run below command
+
+  service ssh restart
+
+20)  just come out from docker container (ctl+PQ)
+
+21)  Now you are in docker engine
+
+************same setps do for Node4  form (steps 16 to 20)********************************
+
+
+
+22)set sudo permission for node3 and node4 users
+
+
+docker attach node3
+apt-get install sudo
+
+visudo 
+
+root    ALL=(ALL:ALL) ALL
+
+pasha  ALL=(ALL:ALL) ALL
+
+:wq!
+
+23)
+
+
+docker attach node4
+apt-get install sudo
+
+visudo 
+
+root    ALL=(ALL:ALL) ALL
+
+pasha1  ALL=(ALL:ALL) ALL
+
+:wq!
+
+
+
+Now open ports in docker engine in AWS (note which instance you taken has for installing docker)
+
+goto inbound rules:  set customtcp ,tcp,3344,Anywhere
+
+                     set customtcp ,tcp,3355,Anywhere
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+now go to workstation  
+
+bootstrap for node3 & node4
+
+knife bootstrap ipaddress of dockerengine(instance) -p 3344 --sudo -x pasha -P 123 "Node3"
+
+ note : -p for port no
+        -P for password 
+
+
+knife bootstrap ipaddress of dockerengine(instance) -p 3355 --sudo -x pasha1 -P 123 "Node4"
+
+
+
+output:  Just Goto chefserver Node3,Node4 has bootstrap has  sucessfully....

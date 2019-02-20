@@ -1,0 +1,197 @@
+RDS
+
+1)VPC Creation
+-------------------
+first go to vpc service in aws services dash board
+
+
+1)Go To vpc 
+2)selct your pc
+3)create your vpc
+
+name tag:RDSVPC
+
+IPV4 CIDR block:192.168.0.0/16
+
+press create
+
+
+now vpc is create.
+
+------------------------
+2)subnet cretion
+
+
+2.1)  create sub net for pubilc
+
+1)goto subnet --Create subnet
+
+Tag Name:Public
+Vpc: selct your created Vpc
+
+Availabilty Zone:selct as per  You
+
+Ipv4 CIDR block:192.168.1.0/24
+
+
+click yes,create 
+
+
+2.2)  Create subnet private 
+
+
+1)goto subnet --Create subnet
+
+Tag Name:private
+Vpc: selct your created Vpc
+
+Availabilty Zone:selct as per  You
+
+Ipv4 CIDR block:192.168.2.0/24
+
+
+click yes,create 
+---------------------------
+
+3)  Create Internet Gate Way
+
+3.1)  Then Attach to your created VPC   Now This state is attached.
+
+--------------------
+
+4)  Route Table
+
+Go to Route Table By default when we Create Vpc one Route Table is generated. select That Route table
+
+And Then Below Menu Bar see this Options subnet Assocation
+
+Click Edit Buttion
+
+selcect Public subent  And click save
+
+4.1) Now right side of Subnet Assocations Menu Find Route Option
+
+Click Edit  And Add another route
+
+Give   Destination:  0.0.0.0/0    target:select  Your Created Internetgateway. And Save
+
+
+------------------
+
+5) Now Go EC2 Create one Instance  like follow
+------------------------------------------------------------
+
+1)slect aws-amazon Instance
+
+2)Choose an Instance Type:General purpose(t2.micro)
+
+3)Configure Instance Details:
+
+3.1)Network  :select your vpc
+Subnet:selct your public subnet
+
+Auto-assign Public IP:Enable
+
+
+4) Default
+5)Add Tag: Give Any Name(webserver)
+6)Configure Security Group
+now open http,https,mysal/Aurora set  source is custom 192.168.0.0/16  
+
+7)now lunch and Review
+
+
+--------------------------------
+
+6  connect this webserver to putty.
+
+
+set sudo permission 
+
+sudo-i
+
+----------------------
+
+Now goTo RDS  in services dasha Board
+
+
+click RDS start
+
+selct mysql database
+
+selct dev/test  and press next
+
+Specify DB Details
+-----
+
+DB engine version:mysql 5.6.27
+Db instance type:db.t2.micro
+Multi-AZ Deployment:no
+
+setting  
+
+DB Instance Identifier:mydbinstance
+Master Username:mydb
+Master Password:mydb1234
+
+Confirm Password:mydb1234
+
+Configure Advanced Settings
+----------------------------
+Network & Security 
+
+
+vpc:select your vpc
+
+Publicly Accessible:no
+
+Availability Zone:created sub net for private
+
+vpc security group:RDSSG
+
+
+
+now lunch DB instances
+
+
+
+view DB instances
+
+
+plese wait for getting end points
+
+
+copy end point url
+
+mydbinstance.c0jhglsghc75.us-west-1.rds.amazonaws.com
+
+
+
+now install mysql in ec2 instance
+
+
+go  to putty
+
+yum install mysql -y
+
+mysql -h mydbinstance.c0jhglsghc75.us-west-1.rds.amazonaws.com -umydb -p
+
+enter password:mydb1234
+
+now you get
+
+
+mysql>
+
+now you get sucessfully lunch mysql db
+
+
+test purpose 
+
+show databases;
+
+create database pasha;
+
+show databases;
+
+now your database is created.

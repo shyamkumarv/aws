@@ -1,0 +1,105 @@
+file '/tmp/myscr.sh' do
+  action :create
+  soure '/root/chef-repo/cookbooks/abc/files/myscr.sh'
+  mode '0777'
+  owner 'root'
+  group 'root'
+end
+
+execut 'run script' do
+ command 'cd /tmp;sh myscr.sh| tee -a /tmp/myscr.log'
+end
+
+--------------------------------------------------------
+
+workstation:
+---------------
+
+
+recipe:
+      default.rb
+
+
+
+#
+# Cookbook Name:: abc
+# Recipe:: default
+#
+# Copyright 2017, YOUR_COMPANY_NAME
+#
+# All rights reserved - Do Not Redistribute
+#
+
+file '/tmp/ss.sh' do
+
+  
+
+content 'touch/tmp/abc'  
+
+  content 'echo "Hello this is my script"'
+  mode '0755'
+  owner 'root'
+  group 'root'
+end
+
+execute 'run script' do
+ command 'cd /tmp;sh ss.sh| tee -a /tmp/myscr.log'
+
+
+
+------------------------------
+file creation
+
+write code in recipes /vi default.rb
+
+file '/tmp/ss1.sh' do
+content 'touch /tmp/kelly'
+mode '0755'
+  owner 'root'
+  group 'root'
+end
+
+execute 'run script' do
+ command 'cd /tmp;sh ss1.sh'
+end
+
+
+(or)
+
+command 'cd/tmp/ss.sh'
+end
+
+
+
+
+
+-----------------------
+
+
+directory   creation
+
+write code in recipes /vi default.rb
+
+
+file '/tmp/ss1.sh' do
+content 'mkdir /tmp/pasha'
+mode '0755'
+  owner 'root'
+  group 'root'
+end
+
+execute 'run script' do
+ command 'cd /tmp;sh ss1.sh'
+end
+
+
+
+
+
+
+
+-------------
+
+
+
+

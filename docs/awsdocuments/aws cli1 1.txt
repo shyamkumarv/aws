@@ -1,0 +1,43 @@
+1.Update server engine
+  yum update -y
+2.Install Python in linux engine
+  yum install python
+3.Install awscli in Linux engine
+  pip install awscli 
+    3 aws --version
+    4 aws configure
+    5  yum install httpd
+    6  service httpd start
+    7  aws ec2 describe-instances
+    8  service httpd restart
+    9  aws ec2 describe-instances
+   10  aws ec2 run-instances --image-id  ami-4fffc834 --count 2 --instance-type t2.micro --key-name rdskey
+   12  cd ~/.aws/config
+   13  vi ~/.aws/config
+   16* aws ec2 create-vpc --cidr-block 10.0.0.0/16aws ec2 create-vpc --cidr-block 10.0.
+   17  $ aws ec2 run-instances --image-id ami-xxxxxxxx --count 1 --instance-type t1.micro --key-name MyKeyPair --security-group-ids sg-xxxxxxxx --subnet-id subnet-xxxxxxxx
+   18  $ aws ec2 run-instances --image-id ami-ami-4fffc834 --count 1 --instance-type t2.micro --key-name rdskey --security-group-ids sg-1234 --subnet-1 subnet-myvpc
+   19  ping in.com
+   20  aws ec2 describe-instances
+   21  aws ec2 describe-vpcs
+   22  aws ec2 create-vpc --cidr-block 10.0.0.0/16
+   23  aws ec2 create-subnet --vpc-id vpc-7dc49f04 --cidr-block 10.0.1.0/24
+   24  aws ec2 create-subnet --vpc-id vpc-7dc49f04 --cidr-block 10.0.0.0/24
+   25  aws ec2 create-internet-gateway
+   26  aws ec2 attach-internet-gateway --vpc-id vpc-7dc49f04 --internet-gateway-id igw-24606742
+   27  aws ec2 create-route-table --vpc-id vpc-7dc49f04
+   28  aws ec2 create-route --route-table-id rtb-0ff40874 --destination-cidr-block 0.0.0.0/0 --gateway-id igw-24606742
+   29  aws ec2 describe-route-tables --route-table-id rtb-0ff40874
+   30  aws ec2 associate-route-table  --subnet-id subnet-9ab556a5 --route-table-id rtb-0ff40874
+   31  aws ec2 create-key-pair --key-name clikey --query 'KeyMaterial' --output text > cli.pem
+   32  chmod 400 cli.pem
+   33  aws ec2 create-security-group --group-name vpcsg --description "Security group for SSH access" --vpc-id vpc-7dc49f04
+   34  aws ec2 authorize-security-group-ingress --group-id sg-1e6bee6e --protocol ssh --port 22 --cidr 0.0.0.0/0
+   35  aws ec2 authorize-security-group-ingress --group-id sg-1e6bee6e --protocol tcp --port 22 --cidr 0.0.0.0/0
+   36  aws ec2 describe-images --owners self amazon --filters "Name=root-device-type,Values=ebs"
+   37  ami-bd86fdaa
+   38  aws ec2 describe-vpc
+   39  aws ec2 describe-vpcs
+   40  aws ec2 describe-subnets
+   41  aws ec2 describe-securitygroups
+   42  aws ec2 describe-security-groups

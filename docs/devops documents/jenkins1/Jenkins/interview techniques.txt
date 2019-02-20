@@ -1,0 +1,178 @@
+1. Pay Role Company: Manager Details, team lead details
+2. Client details:  we should prepare that
+3. Email: pay role company email we can share it
+4. Client: client company email and ID card sorry we cannot share it 
+5. Pay slips, Bank statement, form 16 okay
+6.
+
+
+Resume points 
+
+1. Summary 
+2. Professional abilities
+3. Academic
+4. Technical skills
+5. Projects 
+  [Verticals: Health care, Telecom, Banking, Insurance]
+
+Salary: Gross how much
+	  Variable pay   we don’t have variable pay
+	  Take home
+ 
+Pf Details: No 
+
+
+Why are you changing the job?
+
+1. Carrier growth,
+2. Looking for new location or new environment,
+3. Looking for increment
+4. My contract goes to close I am in bench I am serving notice period	
+
+
+
+Technical interview:
+
+1. Ticketing tools: BMC Remedy, OTRS, JIRA, And SERVICE NOW
+
+BMC REMEDY: Incident management, change management, problem management
+
+Build and release they should focus on these tools
+
+1. Git
+2. Jenkins
+3. Tomcat
+4. Maven
+5. chef/Ansible/Puppet
+6. Docker
+7. Shell & Python
+8. Aws [json, yaml, cli]
+9. Linux
+10. Nagios
+
+
+
+Operations side
+
+1. Aws [json, yaml, cli]
+2. Chef/puppet/Ansible
+3. Docker
+4. Jenkins 
+5. Git
+6. Python/Shell
+7. Nagios
+
+
+
+SLA[SERVICE LEVEL AGREEMENT] company selects
+
+1.Ticketing tool
+
+TYPE             STATUS            RESPONSE TIME           RESOLVING TIME            
+
+P1/SER          CRITICAL 	          10MIN				1 HOUR
+P2		     HIGH/EMERGINCE	    30MIN				3 HOURE
+P3 		     NORMAL		          3 HOURE				1 DAY	
+P4              LOW		          1 DAY				2 DAYS   
+
+
+
+
+Chef Resource: 
+
+1. Deployment: java applications deploy in tomcat server
+2. Webserver: Nginx, Apache [Httpd, Apache2]
+3. Patching: updates
+4. Package management: [Install, uninstall, update]
+5. File, Directory
+6. Services
+7. Docker container bootstrap
+
+Ansible Resource
+
+Modules
+1. Docker module
+2. Ec2 module
+3. Yum 
+4. Package
+5. File
+6. Service
+7. Deploy
+
+
+Git 
+
+1. Depends on requirement will perform PULL, PUSH, Fletch operations
+2. Locally will perform init, add, commit
+3. Perform branching, merging, rebase
+
+
+Jenkins:
+
+Jenkins is continuous integration and continuous deployment tool
+Comeing to my job in Jenkins
+1. Build the jobs: and for freestyle job, pipeline, and maven projects
+2. Manage plugins: install ,update, remove
+3. Manage user: create user for requirements add permission to them 
+4. Integrate different tools like [Git, docker, Ansinle,chef,puppet,Aws,ec2,s3,tomcat] for continuous integration and deployment
+
+5. For automatic build purpose i configure webhooks in github.
+6. For build schedule i configure build perdiocally option in project
+7. For if changes happen in github file for this automation will perform i configure [pollscm] in project this     means whenever changes happens in file then only build should be triggered.
+
+8. For reduce the budeen in Jenkins server i configure the slaves.
+9. For managing versions for artifacts we have configure nexus.
+10. Depends on requirement configure post build actions
+11. For notifications purpose we configure mobiles and mails
+12. For pipeline projects we written groovy script
+13. configure the upstream and downstream projects
+14. For code testing and code quality for configure sonarqube
+15. For monitoring purpose install nagios plugin integrate with Jenkins
+
+
+
+
+Docker:
+1. For Deploying QA, DEV, UAT, Environments to test the applications we run docker containers on images
+2. Depends on requirements I pull images from docker registry (own registry)
+3. To restore images our custom images in our own docker registry 
+4. We create docker file depends on requirements and build docker file as images 
+5. Create docker compose file to run multi container at single time 
+6. Link different containers if one container depends on other 
+7. Deploy web application in docker containers
+8. Deploy tomcat application in DEV,QA,UAT,PREPRODUCTION ENVIRONMENT,PRODUCTIONS
+9. Create build, custom network to secure container                     
+10. Open the ports depends on requirements 
+11. For production container clusterziation in my SWARM                                                                            environment we user DOCKER SWARM clusterziation     
+12. For Docker Swarm managers and nodes will be maintain
+13. Add works, nodes in swarm clusterziation
+
+
+
+
+Aws(Amazon Web Services):
+
+1. For Jenkins, Docker, Chef, Ansible, Puppet will in provision             Ec2-      instances these are running on cloud environment 
+2.  For secure instance we have configure VPC	(Virtual Private           Network) for that configure subnets, Internet Gateway, Routes, subnet association IN MY IN PRIVATE SUBNETS
+3. Vpc we create two subnets  1)Private subnet  2)Public subnet
+4. By using NATGATWAY we will update database server 
+NATGATEWAY-->ROUTES-->PRIVATE SUBNET
+                        PUBLIC SUBNET
+
+
+
+1. For storing data ,files, artifacts we are using S3
+2. Depends on requirements we provide bucket permissions through others
+3. For managing multiple projects in project we use IAM (Identity access management)
+4. Depends on requirements we spin up RDS database server
+5. For running managing multiple instances we use cloud formation 
+6. We develop the stack templates
+7. For notification we use SNS(Simple notification services)
+8. For Ec2 instance monitoring we use cloud watch 
+
+NAGIOS:
+1. For infrastructure monitoring we use Nagios  
+2. For critical, High-level situation we get Nagios alert
+3. We are host in Nagios 
+4. We configure service in Nagios
+

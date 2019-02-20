@@ -1,0 +1,1773 @@
+Authenticating with public key "imported-openssh-key"
+Last login: Thu Aug  3 03:49:59 2017 from 183.82.181.29
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2017.03-release-notes/
+1 package(s) needed for security, out of 3 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@workstation ~]$ sudo -i
+[root@workstation ~]# ls
+chefdk-1.5.0-1.el6.x86_64.rpm  chef-repo
+[root@workstation ~]# cd chef-repo
+[root@workstation chef-repo]# ls
+auto.sh  boot.sh  cookbooks  README.md  roles
+[root@workstation chef-repo]# cd cookbooks/
+[root@workstation cookbooks]# ls
+chefignore  default.rb  iictech  kelly  starter  test  venkat
+[root@workstation cookbooks]# cd venkat/
+[root@workstation venkat]# ls
+attributes    definitions  libraries    providers  recipes    templates
+CHANGELOG.md  files        metadata.rb  README.md  resources
+[root@workstation venkat]# cd files/
+[root@workstation files]# ls
+default
+[root@workstation files]# cd default/
+[root@workstation default]# ls
+[root@workstation default]# vi index.html
+[root@workstation default]# cd ..
+[root@workstation files]# cd ..
+[root@workstation venkat]# ls
+attributes    definitions  libraries    providers  recipes    templates
+CHANGELOG.md  files        metadata.rb  README.md  resources
+[root@workstation venkat]# cd recipes
+[root@workstation recipes]# ls
+default.rb
+[root@workstation recipes]# vi default.rb
+[root@workstation recipes]# vi default.rb
+[root@workstation recipes]# knife cookbook upload venkat
+Uploading venkat         [0.1.0]
+Uploaded 1 cookbook.
+[root@workstation recipes]# knife node run list add node4 recipe[venkat]
+node4:
+  run_list: recipe[venkat]
+[root@workstation recipes]# ping in.com
+PING in.com (124.153.64.218) 56(84) bytes of data.
+64 bytes from 124.153.64.218: icmp_seq=1 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=2 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=3 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=4 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=5 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=6 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=7 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=8 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=9 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=10 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=11 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=12 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=13 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=14 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=15 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=16 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=17 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=18 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=19 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=20 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=21 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=22 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=23 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=24 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=25 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=26 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=27 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=28 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=29 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=30 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=31 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=32 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=33 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=34 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=35 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=36 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=37 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=38 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=39 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=40 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=41 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=42 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=43 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=44 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=45 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=46 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=47 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=48 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=49 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=50 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=51 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=52 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=53 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=54 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=55 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=56 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=57 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=58 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=59 ttl=233 time=250 ms
+^C
+--- in.com ping statistics ---
+59 packets transmitted, 59 received, 0% packet loss, time 58066ms
+rtt min/avg/max/mdev = 250.366/252.035/254.974/1.736 ms
+[root@workstation recipes]# knife bootstrap 54.221.185.201 --sudo -x ec2-user -i /home/ec2-user/chef/chefkey.pem -N "node4"
+Node node4 exists, overwrite it? (Y/N) y
+Client node4 exists, overwrite it? (Y/N) y
+Creating new client for node4
+Creating new node for node4
+Connecting to 54.221.185.201
+54.221.185.201 -----> Installing Chef Omnibus (-v 12)
+54.221.185.201 downloading https://omnitruck-direct.chef.io/chef/install.sh
+54.221.185.201   to file /tmp/install.sh.2934/install.sh
+54.221.185.201 trying wget...
+54.221.185.201 el 6 x86_64
+54.221.185.201 Getting information for chef stable 12 for el...
+54.221.185.201 downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=12&p=el&pv=6&m=x86_64
+54.221.185.201   to file /tmp/install.sh.2939/metadata.txt
+54.221.185.201 trying wget...
+54.221.185.201 sha1     db74d1b68861109ffd3c66c8824d66ebc31cefa0
+54.221.185.201 sha256   de087447a168d442d3aaddaed5177ee7a2b09eaacc6b173e1f236a25ab456d50
+54.221.185.201 url      https://packages.chef.io/files/stable/chef/12.21.3/el/6/chef-12.21.3-1.el6.x86_64.rpm
+54.221.185.201 version  12.21.3
+54.221.185.201 downloaded metadata file looks valid...
+54.221.185.201 downloading https://packages.chef.io/files/stable/chef/12.21.3/el/6/chef-12.21.3-1.el6.x86_64.rpm
+54.221.185.201   to file /tmp/install.sh.2939/chef-12.21.3-1.el6.x86_64.rpm
+54.221.185.201 trying wget...
+54.221.185.201 Comparing checksum with sha256sum...
+54.221.185.201 Installing chef 12
+54.221.185.201 installing with rpm...
+54.221.185.201 warning: /tmp/install.sh.2939/chef-12.21.3-1.el6.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+54.221.185.201 Preparing...                          ################################# [100%]
+54.221.185.201 Updating / installing...
+54.221.185.201    1:chef-12.21.3-1.el6               ################################# [100%]
+54.221.185.201 Thank you for installing Chef!
+54.221.185.201 Starting the first Chef Client run...
+54.221.185.201 [2017-08-03T05:17:21+00:00] INFO: Forking chef instance to converge...
+54.221.185.201 Starting Chef Client, version 12.21.3
+54.221.185.201 [2017-08-03T05:17:21+00:00] INFO: *** Chef 12.21.3 ***
+54.221.185.201 [2017-08-03T05:17:21+00:00] INFO: Platform: x86_64-linux
+54.221.185.201 [2017-08-03T05:17:21+00:00] INFO: Chef-client pid: 3011
+54.221.185.201 [2017-08-03T05:17:21+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: Setting the run_list to [] from CLI options
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: Run List is []
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: Run List expands to []
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: Starting Chef Run for node4
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: Running start handlers
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: Start handlers complete.
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: HTTP Request Returned 404 Not Found:
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: Error while reporting run start to Data Collector. URL: https://api.chef.io/organizations/guttula/data-collector Exception: 404 -- 404 "Not Found"  (This is normal if you do not have Chef Automate)
+54.221.185.201 resolving cookbooks for run list: []
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: Loading cookbooks []
+54.221.185.201 Synchronizing Cookbooks:
+54.221.185.201 Installing Cookbook Gems:
+54.221.185.201 Compiling Cookbooks...
+54.221.185.201 [2017-08-03T05:17:23+00:00] WARN: Node node4 has an empty run list.
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: HTTP Request Returned 404 Not Found:
+54.221.185.201 Converging 0 resources
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: Chef Run complete in 0.416489979 seconds
+54.221.185.201
+54.221.185.201 Running handlers:
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: Running report handlers
+54.221.185.201 Running handlers complete
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: Report handlers complete
+54.221.185.201 Chef Client finished, 0/0 resources updated in 02 seconds
+54.221.185.201 [2017-08-03T05:17:23+00:00] INFO: Sending resource update report (run-id: 7fdbc276-64d0-4f0a-a592-92497be9cb14)
+[root@workstation recipes]# ping in.com
+PING in.com (124.153.64.218) 56(84) bytes of data.
+64 bytes from 124.153.64.218: icmp_seq=1 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=2 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=3 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=4 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=5 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=6 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=7 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=8 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=9 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=10 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=11 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=12 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=13 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=14 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=15 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=16 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=17 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=18 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=19 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=20 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=21 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=22 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=23 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=24 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=25 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=26 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=27 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=28 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=29 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=30 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=31 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=32 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=33 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=34 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=35 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=36 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=37 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=38 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=39 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=40 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=41 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=42 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=43 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=44 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=45 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=46 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=47 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=48 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=49 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=50 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=51 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=52 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=53 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=54 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=55 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=56 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=57 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=58 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=59 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=60 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=61 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=62 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=63 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=64 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=65 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=66 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=67 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=68 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=69 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=70 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=71 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=72 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=73 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=74 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=75 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=76 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=77 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=78 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=79 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=80 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=81 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=82 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=83 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=84 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=85 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=86 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=87 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=88 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=89 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=90 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=91 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=92 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=93 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=94 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=95 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=96 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=97 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=98 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=99 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=100 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=101 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=102 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=103 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=104 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=105 ttl=233 time=250 ms
+^C
+--- in.com ping statistics ---
+105 packets transmitted, 105 received, 0% packet loss, time 104119ms
+rtt min/avg/max/mdev = 250.380/250.664/253.304/0.779 ms
+[root@workstation recipes]# ls
+default.rb
+[root@workstation recipes]# vi default.rb
+[root@workstation recipes]# knife cookbook upload venkat
+Uploading venkat         [0.1.0]
+Uploaded 1 cookbook.
+[root@workstation recipes]# knife node run list add node4 recipe[venkat]
+node4:
+  run_list: recipe[venkat]
+[root@workstation recipes]# ping in.com
+PING in.com (124.153.64.218) 56(84) bytes of data.
+64 bytes from 124.153.64.218: icmp_seq=1 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=2 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=3 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=4 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=5 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=6 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=7 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=8 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=9 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=10 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=11 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=12 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=13 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=14 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=15 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=16 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=17 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=18 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=19 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=20 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=21 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=22 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=23 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=24 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=25 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=26 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=27 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=28 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=29 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=30 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=31 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=32 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=33 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=34 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=35 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=36 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=37 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=38 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=39 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=40 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=41 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=42 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=43 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=44 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=45 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=46 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=47 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=48 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=49 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=50 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=51 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=52 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=53 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=54 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=55 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=56 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=57 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=58 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=59 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=60 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=61 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=62 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=63 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=64 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=65 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=66 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=67 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=68 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=69 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=70 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=71 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=72 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=73 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=74 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=75 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=76 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=77 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=78 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=79 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=80 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=81 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=82 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=83 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=84 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=85 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=86 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=87 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=88 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=89 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=90 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=91 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=92 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=93 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=94 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=95 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=96 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=97 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=98 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=99 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=100 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=101 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=102 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=103 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=104 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=105 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=106 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=107 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=108 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=109 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=110 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=111 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=112 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=113 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=114 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=115 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=116 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=117 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=118 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=119 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=120 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=121 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=122 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=123 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=124 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=125 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=126 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=127 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=128 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=129 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=130 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=131 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=132 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=133 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=134 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=135 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=136 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=137 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=138 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=139 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=140 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=141 ttl=233 time=253 ms
+^C
+--- in.com ping statistics ---
+141 packets transmitted, 141 received, 0% packet loss, time 140159ms
+rtt min/avg/max/mdev = 250.327/250.897/254.636/1.179 ms
+[root@workstation recipes]# cd
+[root@workstation ~]# cd chef-repo
+[root@workstation chef-repo]# cd cookbooks
+[root@workstation cookbooks]# ls
+chefignore  default.rb  iictech  kelly  starter  test  venkat
+[root@workstation cookbooks]#
+login as: ec2-user
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Thu Aug  3 05:08:05 2017 from 183.82.180.140
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2017.03-release-notes/
+1 package(s) needed for security, out of 3 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@workstation ~]$ sudo -i
+[root@workstation ~]# cd chef
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Thu Aug  3 05:24:56 2017 from 183.82.180.140
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2017.03-release-notes/
+1 package(s) needed for security, out of 3 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@workstation ~]$ sudo -i
+[root@workstation ~]# cd chef-repo
+[root@workstation chef-repo]# cd cookbooks
+[root@workstation cookbooks]# [root@workstation cookbooks]# scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.91.170.148:/etc/httpd/conf/httpd.conf kelly/templates/default/
+-bash: [root@workstation: command not found
+[root@workstation cookbooks]# scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.221.185.201:/etc/httpd/conf/httpd.conf venkat/templates/default/            login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Thu Aug  3 05:25:36 2017 from 183.82.180.140
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2017.03-release-notes/
+1 package(s) needed for security, out of 3 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@workstation ~]$ sudo -i
+[root@workstation ~]# cd chef-repo
+[root@workstation chef-repo]# cd cookbook
+-bash: cd: cookbook: No such file or directory
+[root@workstation chef-repo]# cd cookbooks
+[root@workstation cookbooks]#  scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.221.185.201:/etc/httpd/conf/httpd.conf venkat/templates/default/
+httpd.conf                                    100%   34KB  33.7KB/s   00:00
+[root@workstation cookbooks]# ls
+chefignore  default.rb  iictech  kelly  starter  test  venkat
+[root@workstation cookbooks]# cd venkat/
+[root@workstation venkat]# ls
+attributes    definitions  libraries    providers  recipes    templates
+CHANGELOG.md  files        metadata.rb  README.md  resources
+[root@workstation venkat]# cd templates/
+[root@workstation templates]# ls
+default
+[root@workstation templates]# cd default/
+[root@workstation default]# ls
+httpd.conf
+[root@workstation default]# mv httpd.conf httpd.conf.erb
+[root@workstation default]# ls
+httpd.conf.erb
+[root@workstation default]# vi httpd.conf.erb
+[root@workstation default]# cd ..
+[root@workstation templates]# cd ..
+[root@workstation venkat]# ls
+attributes    definitions  libraries    providers  recipes    templates
+CHANGELOG.md  files        metadata.rb  README.md  resources
+[root@workstation venkat]# cd attributes/
+[root@workstation attributes]# ls
+[root@workstation attributes]# vi default.rb
+[root@workstation attributes]# cd ..
+[root@workstation venkat]# ls
+attributes    definitions  libraries    providers  recipes    templates
+CHANGELOG.md  files        metadata.rb  README.md  resources
+[root@workstation venkat]# cd files/
+[root@workstation files]# ls
+default
+[root@workstation files]# cd default/
+[root@workstation default]# ls
+index.html
+[root@workstation default]# cd ..
+[root@workstation files]# cd ..
+[root@workstation venkat]# ls
+attributes    definitions  libraries    providers  recipes    templates
+CHANGELOG.md  files        metadata.rb  README.md  resources
+[root@workstation venkat]# cd recipes
+[root@workstation recipes]# ls
+default.rb
+[root@workstation recipes]# vi default.rb
+[root@workstation recipes]# ping in.com
+PING in.com (124.153.64.218) 56(84) bytes of data.
+64 bytes from 124.153.64.218: icmp_seq=1 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=2 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=3 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=4 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=5 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=6 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=7 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=8 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=9 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=10 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=11 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=12 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=13 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=14 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=15 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=16 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=17 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=18 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=19 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=20 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=21 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=22 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=23 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=24 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=25 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=26 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=27 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=28 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=29 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=30 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=31 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=32 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=33 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=34 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=35 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=36 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=37 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=38 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=39 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=40 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=41 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=42 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=43 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=44 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=45 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=46 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=47 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=48 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=49 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=50 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=51 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=52 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=53 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=54 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=55 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=56 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=57 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=58 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=59 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=60 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=61 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=62 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=63 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=64 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=65 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=66 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=67 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=68 ttl=233 time=250 ms
+^C
+--- in.com ping statistics ---
+68 packets transmitted, 68 received, 0% packet loss, time 67014ms
+rtt min/avg/max/mdev = 250.386/250.688/252.153/0.610 ms
+[root@workstation recipes]# knife cookbook upload venkat
+Uploading venkat         [0.1.0]
+FATAL: Erb template  has a syntax error:
+FATAL: /root/chef-repo/cookbooks/venkat/templates/default/httpd.conf.erb:136: syntax error, unexpected ')', expecting ']'
+FATAL: Listen'; _buf << (node['venkat'['Listen']).to_s; _buf << '
+FATAL:                                           ^
+FATAL: /root/chef-repo/cookbooks/venkat/templates/default/httpd.conf.erb:1013: syntax error, unexpected end-of-input, expecting ')'
+[root@workstation recipes]# cd
+[root@workstation ~]# cd chef-repo
+[root@workstation chef-repo]# knife cookbook upload venkat
+Uploading venkat         [0.1.0]
+FATAL: Erb template  has a syntax error:
+FATAL: /root/chef-repo/cookbooks/venkat/templates/default/httpd.conf.erb:136: syntax error, unexpected ')', expecting ']'
+FATAL: Listen'; _buf << (node['venkat'['Listen']).to_s; _buf << '
+FATAL:                                           ^
+FATAL: /root/chef-repo/cookbooks/venkat/templates/default/httpd.conf.erb:1013: syntax error, unexpected end-of-input, expecting ')'
+[root@workstation chef-repo]# ls
+auto.sh  boot.sh  cookbooks  README.md  roles
+[root@workstation chef-repo]# cd cookbooks/
+[root@workstation cookbooks]# ls
+chefignore  default.rb  iictech  kelly  starter  test  venkat
+[root@workstation cookbooks]# cd v
+-bash: cd: v: No such file or directory
+[root@workstation cookbooks]# d venkat/
+-bash: d: command not found
+[root@workstation cookbooks]# ls
+chefignore  default.rb  iictech  kelly  starter  test  venkat
+[root@workstation cookbooks]# cd venkat/
+[root@workstation venkat]# ls
+attributes    definitions  libraries    providers  recipes    templates
+CHANGELOG.md  files        metadata.rb  README.md  resources
+[root@workstation venkat]# cd recipes
+[root@workstation recipes]# ls
+default.rb
+[root@workstation recipes]# vi default.rb
+[root@workstation recipes]# ls
+default.rb
+[root@workstation recipes]# cd ..
+[root@workstation venkat]# ls
+attributes    definitions  libraries    providers  recipes    templates
+CHANGELOG.md  files        metadata.rb  README.md  resources
+[root@workstation venkat]# cd templates/
+[root@workstation templates]# ls
+default
+[root@workstation templates]# d default/
+-bash: d: command not found
+[root@workstation templates]# cd default/
+[root@workstation default]# ls
+httpd.conf.erb
+[root@workstation default]# vi httpd.conf.erb
+[root@workstation default]# knife cookbook upload venkat
+Uploading venkat         [0.1.0]
+Uploaded 1 cookbook.
+[root@workstation default]# knife node run list add node4 recipe[venkat]
+node4:
+  run_list: recipe[venkat]
+[root@workstation default]# ping in.com
+PING in.com (124.153.64.218) 56(84) bytes of data.
+64 bytes from 124.153.64.218: icmp_seq=1 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=2 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=3 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=4 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=5 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=6 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=7 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=8 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=9 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=10 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=11 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=12 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=13 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=14 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=15 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=16 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=17 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=18 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=19 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=20 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=21 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=22 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=23 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=24 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=25 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=26 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=27 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=28 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=29 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=30 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=31 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=32 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=33 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=34 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=35 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=36 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=37 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=38 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=39 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=40 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=41 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=42 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=43 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=44 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=45 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=46 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=47 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=48 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=49 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=50 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=51 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=52 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=53 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=54 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=55 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=56 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=57 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=58 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=59 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=60 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=61 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=62 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=63 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=64 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=65 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=66 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=67 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=68 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=69 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=70 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=71 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=72 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=73 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=74 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=75 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=76 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=77 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=78 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=79 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=80 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=81 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=82 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=83 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=84 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=85 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=86 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=87 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=88 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=104 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=105 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=106 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=107 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=108 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=109 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=110 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=111 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=112 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=113 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=114 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=115 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=116 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=117 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=118 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=119 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=120 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=121 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=122 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=123 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=124 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=125 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=126 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=127 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=128 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=129 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=130 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=131 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=132 ttl=230 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=133 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=134 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=135 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=136 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=137 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=138 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=139 ttl=230 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=140 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=141 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=142 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=143 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=144 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=145 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=146 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=147 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=148 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=149 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=150 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=151 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=152 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=153 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=154 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=155 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=156 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=157 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=158 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=159 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=160 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=161 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=162 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=163 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=164 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=165 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=166 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=167 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=168 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=169 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=170 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=171 ttl=230 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=172 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=173 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=174 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=175 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=176 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=177 ttl=230 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=178 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=179 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=180 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=181 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=182 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=183 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=184 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=185 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=186 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=187 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=188 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=189 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=190 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=191 ttl=230 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=192 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=193 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=194 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=195 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=196 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=197 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=198 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=199 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=200 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=201 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=202 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=203 ttl=230 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=204 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=205 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=206 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=207 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=208 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=209 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=210 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=211 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=212 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=213 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=214 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=215 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=216 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=217 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=218 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=219 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=220 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=221 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=222 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=223 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=224 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=225 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=226 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=227 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=228 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=229 ttl=230 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=230 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=231 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=232 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=233 ttl=230 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=234 ttl=230 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=235 ttl=230 time=253 ms
+login as: ec
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Thu Aug  3 05:27:26 2017 from 183.82.180.140
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2017.03-release-notes/
+1 package(s) needed for security, out of 3 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@workstation ~]$ sudo -i
+[root@workstation ~]# history
+    1  wget  https://packages.chef.io/files/stable/chefdk/1.5.0/el/6/chefdk-1.5.0-1.el6.x86_64.rpm
+    2  ls
+    3  yum install
+    4  chefdk-1.5.0-1.el6.x86_64.rpm
+    5  yum install
+    6  chefdk-1.5.0-1.el6.x86_64.rpm
+    7  ls
+    8  cd chef-repo
+    9  clear
+   10  ls
+   11  yum install chefdk-1.5.0-1.el6.x86_64.rpm
+   12  ls
+   13  cd chef-repo
+   14  rpm -qa chef
+   15  ls
+   16  clear
+   17  ls
+   18  cd /home/ec2-user
+   19  ls
+   20  pwd
+   21  mv /root/
+   22  ls
+   23  cd chef
+   24  ls
+   25  mv chef/root/
+   26  cd
+   27  ls
+   28  pwd
+   29  clear
+   30  ls
+   31  cd /home/ec2-user/
+   32  pwd
+   33  ls
+   34  mv chef/root/
+   35  cd
+   36  pwd
+   37  mv /chef/root/
+   38  cd /home/ec2-user
+   39  ls
+   40  cd chef
+   41  ls
+   42  mv  chef-starter.zip/root/
+   43  mv --help
+   44  mv  chef-starter.zip /root/
+   45  ls
+   46  pwd
+   47  cd
+   48  pwd
+   49  ls
+   50  unzip chef-starter.zip
+   51  ls
+   52  rm -f chef-starter.zip
+   53  ls
+   54  cd chef-repo
+   55  ls
+   56  clear
+   57  ls
+   58  ls -a
+   59  cd .chef
+   60  ls
+   61  cd
+   62  cd chef-repo
+   63  ls
+   64  vi boot.sh
+   65  ls
+   66  ./boot.sh
+   67  chmod +x boot.sh
+   68  ls -ld boot.sh
+   69  ./boot.sh
+   70  vi boot.sh
+   71  ./boot.sh
+   72  vi boot.sh
+   73  ./boot.sh
+   74  ls
+   75  clear
+   76  ls
+   77  vi /etc/sysconfig/network
+   78  sudo -i
+   79  sudo hostname workstation
+   80  sudo -i
+   81  ls
+   82  cd chef-repo
+   83  ls
+   84  vi boot.sh
+   85  ./boot.sh
+   86  ls
+   87  cd cookbooks
+   88  ls
+   89  knife cookbook create test
+   90  ls
+   91  cd test
+   92  ls
+   93  cd attributes
+   94  ls
+   95  vi default.rb
+   96  cd
+   97  cd chef-repo
+   98  ls
+   99  cd cookbooks
+  100  ls
+  101  cd test
+  102  ls
+  103  cd recipes
+  104  ls
+  105  vi default.rb
+  106  ls
+  107  cd chef-repo
+  108  ls
+  109  cd cookbooks
+  110  ls
+  111  cd test
+  112  ls
+  113  cd recipes
+  114  ls
+  115  vi default.rb
+  116  cd .//.
+  117  cd ..
+  118  ls
+  119  cd attributes
+  120  ls
+  121  vi default.rb
+  122  cd ..
+  123  cd templates
+  124  ls
+  125  cd default
+  126  ls
+  127  vi index.html.erb
+  128  cd ..
+  129  knife coo
+  130  ls
+  131  knife node show node1
+  132  knife node run list node1 "recipe[test]"
+  133  knife node run list add node1 "recipe[test]"
+  134  knife node show node1
+  135  ping in.com
+  136  ls
+  137  cd default
+  138  ls
+  139  cd ..
+  140  ls
+  141  cd recipes
+  142  ls
+  143  vi default.rb
+  144  cd ..
+  145  ls
+  146  cd files
+  147  ls
+  148  cd default/
+  149  ls
+  150  cd ..
+  151  ping .com
+  152  ping.com
+  153  ping in.com
+  154  ls
+  155  ping in.com
+  156  ls
+  157  knife cookbook upload test
+  158  knike node run list add node1 "recipe[test]"
+  159  knife node run list add node1 "recipe[test]"
+  160  knife node list
+  161  knife node node1 list
+  162  knife node show node1
+  163  ping in.com
+  164  ls
+  165  cd chef-repo
+  166  ls
+  167  cd cookbooks
+  168  ls
+  169  cd
+  170  cd chef-repo
+  171  ls
+  172  ./boot.sh
+  173  vi boot.sh
+  174  ./boot.sh
+  175  vi boot.sh
+  176  cd /home/ec2-user
+  177  ls
+  178  cd chef
+  179  ls
+  180  cd  /root
+  181  pwd
+  182  sudo chef-repo
+  183  cd chef-repo
+  184  ls
+  185  vi boot.sh
+  186  ls
+  187  cd chef-repo
+  188  ls
+  189  ls
+  190  cd chef-repo
+  191  ls
+  192  vi boot.sh
+  193  cd chef-repo
+  194  ls
+  195  cd cookbooks
+  196  ls
+  197  cd test
+  198  ls
+  199  cd recipes
+  200  ls
+  201  vi defaul.rb
+  202  vi default.rb
+  203  cd
+  204  cd chef-repo
+  205  ls
+  206  cd cookbooks
+  207  ls
+  208  cd test
+  209  ls
+  210  cd templates
+  211  ls
+  212  cd default
+  213  ls
+  214  vi index.html.erb
+  215  cd
+  216  cd chef-repo
+  217  cd cookbooks
+  218  ls
+  219  cd test
+  220  cd
+  221  cd chef-repo
+  222  ls
+  223  cd cookbooks
+  224  knife cookbook upload test
+  225  cd
+  226  cd chef-repo
+  227  knife bootstarp 34.228.69.132 -x ramu -P 123 -N "node1"
+  228  knife node run list node1 "recipe[test]"
+  229  cd chef-repo/
+  230  ls
+  231  cd cookbooks/
+  232  ls
+  233  cd iictech/
+  234  ls
+  235  cd recipes/
+  236  ls
+  237  vi default.rb
+  238  cd
+  239  cd chef-repo/
+  240  cd cookbooks/iictech/templates/
+  241  ls
+  242  cd default/
+  243  ls
+  244  mv test.html.erb index.html.erb
+  245  ls
+  246  vi index.html.erb
+  247  cd ..
+  248  cd attributes/
+  249  ls
+  250  cd ../..
+  251  cd iictech/
+  252  ls
+  253  cd attributes/
+  254  ls
+  255  mv /root/chef-repo/cookbooks/test/attributes/default.rb .
+  256  ls
+  257  vi default.rb
+  258  cd ..
+  259  cd recipes/
+  260  ls
+  261  vi default.rb
+  262  knife cookbook upload iictech
+  263  ls
+  264  vi default.rb
+  265  cd
+  266  cd chef-repo
+  267  ls
+  268  cd cookbooks
+  269  ls
+  270  cd iictech
+  271  ls
+  272  cd attributes/
+  273  ls
+  274  vi default.rb
+  275  ls
+  276  cd chef-repo
+  277  ls
+  278  cd cookbooks
+  279  l
+  280  ls
+  281  cd test
+  282  ls
+  283  cd atributes
+  284  cd attributes
+  285  ls
+  286  vi default.rb
+  287  cd
+  288  cd chef-repo
+  289  ls
+  290  cd cookbooks
+  291  ls
+  292  cd test
+  293  ls
+  294  cd templates
+  295  ls
+  296  cd default
+  297  ls
+  298  vi index.html.erb
+  299  cd .//..
+  300  cd recipes
+  301  ls
+  302  vi default.rb
+  303  cd
+  304  cd chef-repo
+  305  knife cookbook upload test
+  306  ls
+  307  cd chef-repo
+  308  ls
+  309  cd cookbooks
+  310  ls
+  311  knife cookbook upload test
+  312  knife node run list add node1 "recipe[test]"
+  313  knife node1 show
+  314  ping in.com
+  315  ls
+  316  cd test
+  317  ls
+  318  cd templates
+  319  ls
+  320  cd default
+  321  ls
+  322  cd .//
+  323  cd ..
+  324  ls
+  325  cd recipes
+  326  ls
+  327  vi default.rb
+  328  knife cookbook upload test
+  329  knife node run list add node1 "recipe[test]"
+  330  ping in.com
+  331  ls
+  332  vi default.rb
+  333  cd ..
+  334  ls
+  335  cd test
+  336  ls
+  337  cd templates
+  338  ls
+  339  cd default
+  340  ls
+  341  vi index.html.erb
+  342  ping in.com
+  343  ls
+  344  vi test.html.erb
+  345  cd ..
+  346  knife cookbook upload test
+  347  knife node run list add node1 "recipe[test]"
+  348  ping in.com
+  349  ls
+  350  cd
+  351  cd chef-repo/
+  352  cd cookbooks/
+  353  cd test
+  354  ls
+  355  cd recipes
+  356  ls
+  357  vi default.rb
+  358  cd ..
+  359  cd templates/
+  360  ls
+  361  cd default/
+  362  ls
+  363  vi test.html.erb
+  364  rm index.html.erb
+  365  ls
+  366  knife cookbook upload test
+  367  ping in.com
+  368  cd
+  369  ls
+  370  cd chef-repo
+  371  ls
+  372  cd cookbooks
+  373  ls
+  374  knife cookbook create iictech
+  375  ls
+  376  knife cookbook upload
+  377  cd
+  378  cd chef-repo
+  379  knife cookbook upload iictech
+  380  knife node run list node1 "recipe[iictech]"
+  381  ping in.com
+  382  ls
+  383  cd cookbooks
+  384  ls
+  385  cd test
+  386  ls
+  387  cd  ..
+  388  ls
+  389  cd iictech
+  390  ls
+  391  cd templates
+  392  ls
+  393  cd default
+  394  ls
+  395  vi test.html.erb
+  396  cd recipes
+  397  cd ..
+  398  ls
+  399  cd recipes
+  400  ls
+  401  vi default.rb
+  402  cd ..
+  403  l
+  404  ls
+  405  cd test
+  406  ls
+  407  cd recipes
+  408  ls
+  409  vi default.rb
+  410  cd ..
+  411  cd iictech
+  412  ls
+  413  cd recipes
+  414  ls
+  415  vi default.rb
+  416  cd ..
+  417  ls
+  418  cd templates
+  419  ls
+  420  cd default
+  421  ls
+  422  cd ..
+  423  ls
+  424  cd recipes
+  425  ls
+  426  cd default.rb
+  427  vi default.rb
+  428  ls
+  429  knife cookbook upload iictech
+  430  knife node run list add "recipe[iictech]"
+  431  knife node run list node1 add "recipe[iictech]"
+  432  ping in.com
+  433  knife node run list node2 add "recipe[iictech]"
+  434  ls
+  435  cd chef-repo
+  436  ls
+  437  cd cookbooks
+  438  ls
+  439  cd iictech
+  440  ls
+  441  cd atributes
+  442  cd attributes/
+  443  ls
+  444  cd default.rb
+  445  vi default.rb
+  446  cd ..
+  447  ls
+  448  cd iictech/
+  449  ls
+  450  cd templates/
+  451  ls
+  452  cd default/
+  453  ls
+  454  vi index.html.erb
+  455  cd ..
+  456  l
+  457  ls
+  458  cd ..
+  459  ls
+  460  cd cd recipes
+  461  cd recipes
+  462  ls
+  463  vi default.rb
+  464  cd ..
+  465  clear
+  466  ls
+  467  vi boot.sh
+  468  cd cookbooks
+  469  ls
+  470  knife cookbook create kelly
+  471  ls
+  472  cd kelly
+  473  ls
+  474  cd atributes
+  475  ls
+  476  cd attributes/
+  477  ls
+  478  vi text.rb
+  479  ls
+  480  cd ..
+  481  ls
+  482  cd templates/
+  483  ls
+  484  cd default/
+  485  ls
+  486  vi india.html.erb
+  487  ls
+  488  cd ..
+  489  ls
+  490  cd ..
+  491  ls
+  492  cd recipes
+  493  ls
+  494  vi default.rb
+  495  knife cookbook upload kelly
+  496  ls
+  497  cd ..
+  498  ls
+  499  cd recipes
+  500  ls
+  501  cd ..
+  502  ls
+  503  cd ..
+  504  ls
+  505  cd test
+  506  ls
+  507  cd ..
+  508  ls
+  509  cd ..
+  510  ls
+  511  cd chef-repo
+  512  ls
+  513  ./boot.sh
+  514  ls
+  515  vi auto.sh
+  516  chmod +x auto.sh
+  517  ls -ld auto.sh
+  518  ./auto.sh
+  519  ls
+  520  cd chef-repo
+  521  ls
+  522  knife bootstrap
+  523  knife bootstrap 54.91.170.148 --sudo -x ec2-user -i /home/ec2-user/chef/chefkey.pem
+  524  knife bootstrap 54.91.170.148 --sudo -x ec2-user -i /home/ec2-user/chef/chefkey.pem -N "node3"
+  525  chef node show node3
+  526  clear
+  527  knife node show node3
+  528  knife node run list add node3 "recipe[kelly]"
+  529  knife node show node3
+  530  ping in.com
+  531  clear
+  532  ls
+  533  cd cookbooks
+  534  ls
+  535  cd kelly
+  536  ls
+  537  cd recipes
+  538  ls
+  539  vi environment
+  540  rm -rf environment
+  541  ls
+  542  vi environment.rb
+  543  knife cookbook upload kelly
+  544  ping in.com
+  545  knife node run list add node3 "recipe[kelly]"
+  546  ping in.com
+  547  ls
+  548  cd chef-repo
+  549  ping in.com
+  550  ls
+  551  cd chef-repo
+  552  ping in.com
+  553  ls
+  554  knife node show node1
+  555  knife node show node2
+  556  clear
+  557  ls
+  558  ping in.com
+  559  ls
+  560  clear
+  561  ls
+  562  cd cookbooks/
+  563  ls
+  564  cd kelly
+  565  ls
+  566  cd recipes
+  567  ls
+  568  cd default.rb
+  569  vi default.rb
+  570  ls
+  571  environment.rb
+  572  vi environment
+  573  cd ..
+  574  ls
+  575  cd files/
+  576  ls
+  577  cd default/
+  578  ls
+  579  vi index.html
+  580  ls
+  581  cd ..
+  582  ls
+  583  cd templates/
+  584  ls
+  585  cd default/
+  586  ls
+  587  vi httpd.conf.erb
+  588  cd
+  589  cd chef-repo
+  590  ls
+  591  cd cookbooks/
+  592  ls
+  593  kinf cookbook upload kelly
+  594  kinfe cookbook upload kelly
+  595  cd ..
+  596  knife cookbook upload kelly
+  597  ping in.com
+  598  ls
+  599  knife bootstrap 54.91.170.148 --sudo -x ec2-user -i /home/ec2-user/chef/chef.pem -N "node3"
+  600  cd
+  601  cd /etc/passwd
+  602  pwd
+  603  ping in.com
+  604  ls
+  605  cd chef-repo
+  606  ls
+  607  cd cookbooks
+  608  ls
+  609  scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.91.170.148: /etc/httpd/conf/httpd.cof cookbooks/kelly/templates/default/httpd.conf
+  610  scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.91.170.148: /etc/httpd/conf/httpd.conf  cookbooks/kelly/templates/default/httpd.conf
+  611  cd ..
+  612  scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.91.170.148: /etc/httpd/conf/httpd.conf  cookbooks/kelly/templates/default/httpd.conf
+  613  cd cookbooks
+  614  ls
+  615  cd kelly
+  616  ls
+  617  cd templates/
+  618  ls
+  619  cd default/
+  620  ls
+  621  cd ..
+  622  scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.91.170.148:/etc/httpd/conf/httpd.conf cookbooks/kelly/templates/default/httpd.conf
+  623  scp -i /home/ec2-user/chef/clearchefkey.pem -r ec2-user@54.91.170.148: /etc/httpd/conf/httpd.conf cookbooks/kelly/templates/default/httpd.conf
+  624  clear
+  625  ls
+  626  scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.91.170.148:/etc/httpd/conf/httpd.conf cookbooks/kelly/templates/default/httpd.conf
+  627  scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.91.170.148:/etc/httpd/conf/httpd.conf cookbooks/kelly/templates/default
+  628  scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.91.170.148:/etc/httpd/conf/httpd.conf cookbooks/kelly/templates/default/
+  629  scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.91.170.148:/cookbooks/kelly/templates/default /etc/httpd/conf/httpd.conf
+  630  scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.91.170.148:/etc/httpd/conf/httpd.conf cookbooks/kelly/templates/default/
+  631  ls
+  632  scp -i /home/ec2-user/chef/chefkey.pem -r ec2-user@54.91.170.148:/etc/httpd/conf/httpd.conf kelly/templates/default
+  633  ls
+  634  cd kelly/
+  635  ls
+  636  cd templates/
+  637  ls
+  638  cd default/d
+  639  cd default/
+  640  ls
+  641  rm -rf httpd.conf.erb
+  642  ls
+  643  mv httpd.conf httpd.conf.erb
+  644  ls
+  645  vi httpd.conf.erb
+  646  ls
+  647  cd ..
+  648  l
+  649  ls
+  650  vi default.rb
+  651  ls
+  652  cd kelly/
+  653  ls
+  654  cd templates/
+  655  ls
+  656  cd default/
+  657  ls
+  658  vi httpd.conf.erb
+  659  ls
+  660  vi httpd.conf.erb
+  661  knife cookbook upload kelly
+  662  knife node run list add "recipe[kelly]"
+  663  knife node run list add node3 "recipe[kelly]"
+  664  ls
+  665  cd ..
+  666  ls
+  667  cd default/
+  668  ls
+  669  cd ..
+  670  ls
+  671  cd files/
+  672  ls
+  673  cd default/d
+  674  cd default/
+  675  ls
+  676  vi index.html
+  677  cd ..
+  678  ls
+  679  cd templates/
+  680  ls
+  681  cd default/
+  682  ls
+  683  cd ..
+  684  ls
+  685  cd recipes
+  686  ls
+  687  vi environment.rb
+  688  vi default.rb
+  689  ls
+  690  cd ..
+  691  ls
+  692  cd templates/
+  693  ls
+  694  cd default/
+  695  ls
+  696  cd httpd.conf.erb
+  697  cd
+  698  cd chef-repo
+  699  ls
+  700  knife cookbook upload kelly
+  701  knife node run list add node3 "recipe[kelly]"
+  702  ping in.com
+  703  ls
+  704  clear
+  705  ls
+  706  cd cookbooks/
+  707  ls
+  708  cd kelly/
+  709  ls
+  710  cd templates/
+  711  ls
+  712  cd default/
+  713  ls
+  714  vi httpd.conf.erb
+  715  knife cookbook upload kelly
+  716  knife node run list add node3 "recipe[kelly]"
+  717  vi httpd.conf.erb
+  718  knife cookbook upload kelly
+  719  knife node run list add node3 "recipe[kelly]"
+  720  cd ..
+  721  ls
+  722  cd default/
+  723  ls
+  724  vi httpd.conf.erb
+  725  ls
+  726  cd ..
+  727  ls
+  728  cd recipes
+  729  ls
+  730  vi default.rb
+  731  ls
+  732  cd ..
+  733  ls
+  734  cd files/
+  735  ls
+  736  cd default/
+  737  ls
+  738  vi index.html
+  739  cd ..
+  740  ls
+  741  cd ..
+  742  ls
+  743  cd recipes/
+  744  ls
+  745  vi default.rb
+  746  cd ..
+  747  ls
+  748  cd templates/
+  749  ls
+  750  cd default/
+  751  ls
+  752  vi httpd.conf.erb
+  753  cd ..
+  754  ls
+  755  cd default/
+  756  ls
+  757  vi httpd.conf.erb
+  758  knife cookbook upload kelly
+  759  knife node run lit add node3 "recipe[kelly]
+  760  knife node run lit add node3 "recipe[kelly]"
+  761  cd ..
+  762  ls
+  763  cd default/
+  764  ls
+  765  vi httpd.conf.erb
+  766  knife cookbook upload kelly
+  767  knife node run lit add node3 "recipe[kelly]"
+  768  ls
+  769  vi httpd.conf.erb
+  770  ls
+  771  cd chef-reo
+  772  cd chef-repo
+  773  ls
+  774  cd cookbooks
+  775  ls
+  776  scp -r 54.91.170.148 /etc/httpd/conf/httpd.conf kelly/templates/default/
+  777  cd chef-repo
+  778  cd cookbooks/
+  779   scp -r 54.91.170.148 /etc/httpd/conf/httpd.conf kelly/templates/default/
+  780  scp -r ec2-user@ 54.91.170.148 /etc/httpd/conf/httpd.conf kelly/templates/default/
+  781  scp -r ec2-user@54.91.170.148: /etc/httpd/conf/httpd.conf kelly/templates/default/
+  782  scp -r ec2-user@54.91.170.148: /etc/httpd/conf/httpd.conf kelly/templates/default/
+  783  scp -r root@54.91.170.148: /etc/httpd/conf/httpd.conf kelly/templates/default/
+  784   scp -i 54.91.170.148: /etc/httpd/conf/httpd.conf kelly/templates/default/
+  785   scp -i 54.91.170.148 /etc/httpd/conf/httpd.conf kelly/templates/default/
+  786  ls
+  787  sudo chef-repo
+  788  ls
+  789  cd chef-repo
+  790  ls
+  791  cles
+  792  ls
+  793  cler
+  794  clear
+  795  ls
+  796  cd cookbooks/
+  797  ls
+  798  cd kelly/
+  799  ls
+  800  cd templates/
+  801  ls
+  802  cd default/
+  803  ls
+  804  vi httpd.conf.erb
+  805  cd ..
+  806  ls
+  807  cd files/
+  808  ls
+  809  cd default/
+  810  ls
+  811  vi index.html
+  812  cd ..
+  813  cd recipes
+  814  ls
+  815  vi default.rb
+  816  knife cookbook upload kelly
+  817  knife node run list add "recipe[kelly]"
+  818  knife node run list add node3 "recipe[kelly]"
+  819  knife node show node3
+  820  ping in.com
+  821  ls
+  822  vi default.rb
+  823  cd ..
+  824  ls
+  825  cd templates/
+  826  ls
+  827  cd default/
+  828  ls
+  829  vi httpd.conf.erb
+  830  knife cookbook upload kelly
+  831  knife node run list add node3 "recipe[kelly]"
+  832  ping in.com
+  833  ls
+  834  cd chef-repo
+  835  ls
+  836  cd cookbooks/
+  837  ls
+  838  cd kelly/
+  839  ls
+  840  cd attributes/
+  841  ls
+  842  vi text.rb
+  843  vi default.rb
+  844  knife cookbook upload kelly
+  845  knife node run list add node3 "recipe[kelly]"
+  846  ping in.com
+  847  ls
+  848  cd ..
+  849  ls
+  850  cd templates/
+  851  ls
+  852  cd default/
+  853  ls
+  854  vi httpd.conf.erb
+  855  knife cookbook upload kelly
+  856  knife node run list add node3 "recipe[kelly]"
+  857  ping in.com
+  858  cd ..
+  859  ls
+  860  cd default/
+  861  ls
+  862  vi httpd.conf.erb
+  863  knife cookbook upload kelly
+  864  knife node run list add node3 "recipe[kelly]"
+  865  vi httpd.conf.erb
+  866  knife cookbook upload kelly
+  867  knife node run list add node3 "recipe[kelly]"
+  868  knife node run list add node3 "recipe[kelly@0.3.0]"
+  869  knife node run list add node3 "recipe[kelly]"
+  870  history
+[root@workstation ~]#

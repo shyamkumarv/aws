@@ -1,0 +1,1623 @@
+Authenticating with public key "imported-openssh-key"
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2017.03-release-notes/
+1 package(s) needed for security, out of 3 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-30-218 ~]$ sudo -i
+[root@ip-172-31-30-218 ~]# sudo hostname node4
+[root@ip-172-31-30-218 ~]# sudo -i
+[root@node4 ~]# ping in.com
+PING in.com (124.153.64.218) 56(84) bytes of data.
+64 bytes from 124.153.64.218: icmp_seq=1 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=2 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=3 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=4 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=5 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=6 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=7 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=8 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=9 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=10 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=11 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=12 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=13 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=14 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=15 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=16 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=17 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=18 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=19 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=20 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=21 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=22 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=23 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=24 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=25 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=26 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=28 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=29 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=30 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=31 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=32 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=33 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=34 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=35 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=36 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=37 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=38 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=39 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=40 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=41 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=42 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=43 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=44 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=45 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=46 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=47 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=48 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=49 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=50 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=51 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=52 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=53 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=54 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=55 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=56 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=57 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=58 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=59 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=60 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=61 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=62 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=63 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=64 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=65 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=66 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=67 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=68 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=69 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=70 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=71 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=72 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=73 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=74 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=75 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=76 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=77 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=78 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=79 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=80 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=81 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=82 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=83 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=84 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=85 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=86 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=87 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=88 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=89 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=90 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=91 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=92 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=93 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=94 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=95 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=96 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=97 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=98 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=99 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=100 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=101 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=102 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=103 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=104 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=105 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=106 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=107 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=108 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=109 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=110 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=111 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=112 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=113 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=114 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=115 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=116 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=117 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=118 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=119 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=120 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=121 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=122 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=123 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=124 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=125 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=127 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=128 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=129 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=130 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=131 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=132 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=133 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=134 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=135 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=136 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=137 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=138 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=139 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=140 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=141 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=142 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=143 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=144 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=145 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=146 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=147 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=148 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=149 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=150 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=151 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=152 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=153 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=154 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=155 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=156 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=157 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=158 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=159 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=160 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=161 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=162 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=163 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=164 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=165 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=166 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=167 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=168 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=169 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=170 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=171 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=172 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=173 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=174 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=175 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=176 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=177 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=178 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=179 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=180 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=181 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=182 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=183 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=184 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=185 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=186 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=187 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=188 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=189 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=190 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=191 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=192 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=193 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=194 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=195 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=196 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=197 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=198 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=199 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=200 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=201 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=202 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=203 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=204 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=205 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=206 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=207 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=208 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=209 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=210 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=211 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=212 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=213 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=214 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=215 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=216 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=217 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=218 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=219 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=220 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=221 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=222 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=223 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=224 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=225 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=226 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=227 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=228 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=229 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=230 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=231 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=232 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=233 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=234 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=235 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=236 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=237 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=238 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=239 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=240 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=241 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=242 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=243 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=244 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=245 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=246 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=247 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=248 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=249 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=250 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=251 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=252 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=253 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=254 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=255 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=256 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=257 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=258 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=259 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=260 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=261 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=262 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=263 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=264 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=265 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=266 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=267 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=268 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=269 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=270 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=271 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=272 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=273 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=274 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=275 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=276 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=277 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=278 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=279 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=280 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=281 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=282 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=283 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=284 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=285 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=286 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=287 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=288 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=289 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=290 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=291 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=292 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=293 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=294 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=295 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=296 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=297 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=298 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=299 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=300 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=301 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=302 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=303 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=304 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=305 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=306 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=307 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=308 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=309 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=310 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=311 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=312 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=313 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=314 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=315 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=316 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=317 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=318 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=319 ttl=234 time=258 ms
+64 bytes from 124.153.64.218: icmp_seq=320 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=321 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=322 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=323 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=324 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=325 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=326 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=327 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=328 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=329 ttl=234 time=255 ms
+^C
+--- in.com ping statistics ---
+329 packets transmitted, 327 received, 0% packet loss, time 328136ms
+rtt min/avg/max/mdev = 251.770/253.871/258.119/1.155 ms
+[root@node4 ~]# ls
+[root@node4 ~]# netstat -natpl | grep httpd
+[root@node4 ~]# ping in.com
+PING in.com (124.153.64.218) 56(84) bytes of data.
+64 bytes from 124.153.64.218: icmp_seq=1 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=2 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=3 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=4 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=5 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=6 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=7 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=8 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=9 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=10 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=11 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=12 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=13 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=14 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=15 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=16 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=17 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=18 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=19 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=20 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=21 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=22 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=23 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=24 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=25 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=26 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=27 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=28 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=29 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=30 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=31 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=32 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=33 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=34 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=35 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=36 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=37 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=38 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=39 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=40 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=41 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=42 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=43 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=44 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=45 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=46 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=47 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=48 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=49 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=50 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=51 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=52 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=53 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=54 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=55 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=56 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=57 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=58 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=59 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=60 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=61 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=62 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=63 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=64 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=65 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=66 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=67 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=68 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=69 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=70 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=71 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=72 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=73 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=74 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=75 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=76 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=77 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=78 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=79 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=80 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=81 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=82 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=83 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=84 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=85 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=86 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=87 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=88 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=89 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=90 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=91 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=92 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=93 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=94 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=95 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=96 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=97 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=98 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=99 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=100 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=101 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=102 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=103 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=104 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=105 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=106 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=107 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=108 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=109 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=110 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=111 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=112 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=113 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=114 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=115 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=116 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=117 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=118 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=119 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=120 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=121 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=122 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=123 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=124 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=125 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=126 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=127 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=128 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=129 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=130 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=131 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=132 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=133 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=134 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=135 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=136 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=137 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=138 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=139 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=140 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=141 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=142 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=143 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=144 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=145 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=146 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=147 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=148 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=149 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=150 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=151 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=152 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=153 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=154 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=155 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=156 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=157 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=158 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=159 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=160 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=161 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=162 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=163 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=164 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=165 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=166 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=167 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=168 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=169 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=170 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=171 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=172 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=173 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=174 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=175 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=176 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=177 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=178 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=179 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=180 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=181 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=182 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=183 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=184 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=185 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=187 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=188 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=189 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=190 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=191 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=192 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=193 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=194 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=195 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=196 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=197 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=198 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=199 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=200 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=201 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=202 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=203 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=204 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=205 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=206 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=207 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=208 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=209 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=210 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=211 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=212 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=213 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=214 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=215 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=216 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=217 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=218 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=219 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=220 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=221 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=222 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=223 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=224 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=225 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=226 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=227 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=228 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=229 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=230 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=231 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=232 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=233 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=234 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=235 ttl=234 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=236 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=237 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=238 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=239 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=240 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=241 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=242 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=243 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=244 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=245 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=246 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=247 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=248 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=249 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=250 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=251 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=252 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=253 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=254 ttl=234 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=255 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=256 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=257 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=258 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=259 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=260 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=261 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=262 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=263 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=264 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=265 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=266 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=267 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=268 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=269 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=270 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=271 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=272 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=273 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=274 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=275 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=276 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=277 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=278 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=279 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=280 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=281 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=282 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=283 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=284 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=285 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=286 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=287 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=288 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=289 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=290 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=291 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=292 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=293 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=294 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=295 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=296 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=297 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=298 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=299 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=300 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=301 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=302 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=303 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=304 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=305 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=306 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=307 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=308 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=309 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=310 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=311 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=312 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=313 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=314 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=315 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=316 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=317 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=318 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=319 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=320 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=321 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=322 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=323 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=324 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=325 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=326 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=327 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=328 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=329 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=330 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=331 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=332 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=333 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=335 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=336 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=337 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=338 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=339 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=340 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=341 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=342 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=343 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=344 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=345 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=346 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=347 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=348 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=349 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=350 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=351 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=352 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=353 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=354 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=355 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=356 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=357 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=358 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=359 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=360 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=361 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=362 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=363 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=364 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=365 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=366 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=367 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=368 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=369 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=370 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=371 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=372 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=373 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=374 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=375 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=376 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=377 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=378 ttl=234 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=379 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=380 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=381 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=382 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=383 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=384 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=385 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=386 ttl=234 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=387 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=389 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=390 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=391 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=392 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=393 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=394 ttl=234 time=251 ms
+^C
+--- in.com ping statistics ---
+394 packets transmitted, 391 received, 0% packet loss, time 394387ms
+rtt min/avg/max/mdev = 251.809/254.286/256.921/1.563 ms
+[root@node4 ~]# chef-client
+-bash: chef-client: command not found
+[root@node4 ~]#
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Thu Aug  3 04:39:07 2017 from 183.82.181.29
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2017.03-release-notes/
+1 package(s) needed for security, out of 3 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@node4 ~]$ sudo -i
+[root@node4 ~]# chef-client
+-bash: chef-client: command not found
+[root@node4 ~]# ping in.com
+PING in.com (124.153.64.218) 56(84) bytes of data.
+64 bytes from 124.153.64.218: icmp_seq=1 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=2 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=3 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=4 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=5 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=6 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=7 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=8 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=9 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=10 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=11 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=12 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=13 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=14 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=15 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=16 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=17 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=18 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=19 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=20 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=21 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=22 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=23 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=24 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=25 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=26 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=27 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=28 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=29 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=30 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=31 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=32 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=33 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=34 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=35 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=36 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=37 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=38 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=39 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=40 ttl=233 time=250 ms
+64 bytes from 124.153.64.218: icmp_seq=41 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=42 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=43 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=44 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=45 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=46 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=47 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=48 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=49 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=50 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=51 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=52 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=53 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=54 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=55 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=56 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=57 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=58 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=59 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=60 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=61 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=62 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=63 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=64 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=65 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=66 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=67 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=68 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=69 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=70 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=71 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=72 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=73 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=74 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=75 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=76 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=77 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=78 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=79 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=80 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=81 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=82 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=83 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=84 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=85 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=86 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=87 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=88 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=89 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=90 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=91 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=92 ttl=233 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=93 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=94 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=95 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=96 ttl=233 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=97 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=98 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=99 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=100 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=101 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=102 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=103 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=104 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=105 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=106 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=107 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=108 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=109 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=110 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=111 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=112 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=114 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=115 ttl=233 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=116 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=117 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=118 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=119 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=120 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=121 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=122 ttl=233 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=123 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=124 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=125 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=126 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=127 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=128 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=129 ttl=233 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=130 ttl=233 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=131 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=132 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=133 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=134 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=135 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=136 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=137 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=138 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=139 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=140 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=141 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=142 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=143 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=144 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=145 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=146 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=147 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=148 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=149 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=150 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=151 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=152 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=153 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=154 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=155 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=156 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=157 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=158 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=159 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=160 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=161 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=162 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=163 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=164 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=165 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=166 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=167 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=168 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=169 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=170 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=171 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=172 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=173 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=174 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=175 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=176 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=177 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=178 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=179 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=180 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=181 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=182 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=183 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=184 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=185 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=186 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=187 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=188 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=189 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=190 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=191 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=192 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=193 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=194 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=195 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=196 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=197 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=198 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=199 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=200 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=201 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=202 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=203 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=204 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=205 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=206 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=207 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=208 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=209 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=210 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=211 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=212 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=213 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=214 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=215 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=216 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=217 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=218 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=219 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=220 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=221 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=222 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=223 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=224 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=225 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=226 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=227 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=228 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=229 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=230 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=231 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=232 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=233 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=234 ttl=234 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=235 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=236 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=237 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=238 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=239 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=240 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=241 ttl=234 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=242 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=243 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=244 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=245 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=246 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=247 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=248 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=249 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=250 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=251 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=252 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=253 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=254 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=255 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=256 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=257 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=258 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=259 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=260 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=261 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=262 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=263 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=264 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=265 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=266 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=267 ttl=233 time=257 ms
+64 bytes from 124.153.64.218: icmp_seq=268 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=269 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=270 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=271 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=272 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=273 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=274 ttl=233 time=257 ms
+64 bytes from 124.153.64.218: icmp_seq=275 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=276 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=277 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=278 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=279 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=280 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=281 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=282 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=283 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=284 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=285 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=286 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=287 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=288 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=289 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=290 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=291 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=292 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=293 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=294 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=295 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=296 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=297 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=298 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=299 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=300 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=301 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=302 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=303 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=304 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=305 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=306 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=307 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=308 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=309 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=310 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=311 ttl=233 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=312 ttl=233 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=313 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=314 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=315 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=316 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=317 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=318 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=319 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=320 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=321 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=322 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=323 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=324 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=325 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=326 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=327 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=328 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=329 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=330 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=331 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=332 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=333 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=334 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=335 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=336 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=337 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=338 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=339 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=340 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=341 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=342 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=343 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=344 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=345 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=346 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=347 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=348 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=349 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=350 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=351 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=352 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=353 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=354 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=355 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=356 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=357 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=358 ttl=233 time=257 ms
+64 bytes from 124.153.64.218: icmp_seq=359 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=360 ttl=233 time=254 ms
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Thu Aug  3 04:59:39 2017 from 183.82.181.29
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2017.03-release-notes/
+1 package(s) needed for security, out of 3 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@node4 ~]$ sudo -i
+[root@node4 ~]# chef-client
+-bash: chef-client: command not found
+[root@node4 ~]# ls
+[root@node4 ~]# chef-client
+[2017-08-03T05:17:39+00:00] INFO: Forking chef instance to converge...
+Starting Chef Client, version 12.21.3
+[2017-08-03T05:17:39+00:00] INFO: *** Chef 12.21.3 ***
+[2017-08-03T05:17:39+00:00] INFO: Platform: x86_64-linux
+[2017-08-03T05:17:39+00:00] INFO: Chef-client pid: 3306
+[2017-08-03T05:17:39+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2017-08-03T05:17:41+00:00] INFO: Run List is []
+[2017-08-03T05:17:41+00:00] INFO: Run List expands to []
+[2017-08-03T05:17:41+00:00] INFO: Starting Chef Run for node4
+[2017-08-03T05:17:41+00:00] INFO: Running start handlers
+[2017-08-03T05:17:41+00:00] INFO: Start handlers complete.
+[2017-08-03T05:17:41+00:00] INFO: HTTP Request Returned 404 Not Found:
+[2017-08-03T05:17:41+00:00] INFO: Error while reporting run start to Data Collector. URL: https://api.chef.io/organizations/guttula/data-collector Exception: 404 -- 404 "Not Found"  (This is normal if you do not have Chef Automate)
+resolving cookbooks for run list: []
+[2017-08-03T05:17:41+00:00] INFO: Loading cookbooks []
+Synchronizing Cookbooks:
+Installing Cookbook Gems:
+Compiling Cookbooks...
+[2017-08-03T05:17:41+00:00] WARN: Node node4 has an empty run list.
+[2017-08-03T05:17:41+00:00] INFO: HTTP Request Returned 404 Not Found:
+Converging 0 resources
+[2017-08-03T05:17:41+00:00] INFO: Chef Run complete in 0.291228432 seconds
+
+Running handlers:
+[2017-08-03T05:17:41+00:00] INFO: Running report handlers
+Running handlers complete
+[2017-08-03T05:17:41+00:00] INFO: Report handlers complete
+Chef Client finished, 0/0 resources updated in 01 seconds
+[2017-08-03T05:17:41+00:00] INFO: Sending resource update report (run-id: 089b9cde-99f5-4541-9407-690e2d81e28d)
+[root@node4 ~]# ls
+[root@node4 ~]# cd /var/www/html/
+-bash: cd: /var/www/html/: No such file or directory
+[root@node4 ~]# service httpd status
+httpd: unrecognized service
+[root@node4 ~]# ping in.com
+PING in.com (124.153.64.218) 56(84) bytes of data.
+64 bytes from 124.153.64.218: icmp_seq=1 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=2 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=3 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=4 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=5 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=6 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=7 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=8 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=9 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=10 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=11 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=12 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=13 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=14 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=15 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=16 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=17 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=18 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=19 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=20 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=21 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=22 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=23 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=24 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=25 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=26 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=27 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=28 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=29 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=30 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=31 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=32 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=33 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=34 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=35 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=36 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=37 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=38 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=39 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=40 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=41 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=42 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=43 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=44 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=45 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=46 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=47 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=48 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=49 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=50 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=51 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=52 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=53 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=54 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=55 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=56 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=57 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=58 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=59 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=60 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=61 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=62 ttl=233 time=259 ms
+64 bytes from 124.153.64.218: icmp_seq=63 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=65 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=66 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=67 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=68 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=69 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=70 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=71 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=72 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=73 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=74 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=75 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=76 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=77 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=78 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=79 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=80 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=81 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=82 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=83 ttl=233 time=253 ms
+64 bytes from 124.153.64.218: icmp_seq=84 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=85 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=86 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=87 ttl=233 time=252 ms
+64 bytes from 124.153.64.218: icmp_seq=88 ttl=233 time=251 ms
+64 bytes from 124.153.64.218: icmp_seq=89 ttl=233 time=251 ms
+^C
+--- in.com ping statistics ---
+89 packets transmitted, 88 received, 1% packet loss, time 88122ms
+rtt min/avg/max/mdev = 251.023/251.639/259.790/1.144 ms
+[root@node4 ~]# chef-client
+[2017-08-03T05:20:47+00:00] INFO: Forking chef instance to converge...
+Starting Chef Client, version 12.21.3
+[2017-08-03T05:20:47+00:00] INFO: *** Chef 12.21.3 ***
+[2017-08-03T05:20:47+00:00] INFO: Platform: x86_64-linux
+[2017-08-03T05:20:47+00:00] INFO: Chef-client pid: 3609
+[2017-08-03T05:20:47+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2017-08-03T05:20:48+00:00] INFO: Run List is [recipe[venkat]]
+[2017-08-03T05:20:48+00:00] INFO: Run List expands to [venkat]
+[2017-08-03T05:20:48+00:00] INFO: Starting Chef Run for node4
+[2017-08-03T05:20:48+00:00] INFO: Running start handlers
+[2017-08-03T05:20:48+00:00] INFO: Start handlers complete.
+[2017-08-03T05:20:48+00:00] INFO: HTTP Request Returned 404 Not Found:
+[2017-08-03T05:20:48+00:00] INFO: Error while reporting run start to Data Collector. URL: https://api.chef.io/organizations/guttula/data-collector Exception: 404 -- 404 "Not Found"  (This is normal if you do not have Chef Automate)
+resolving cookbooks for run list: ["venkat"]
+[2017-08-03T05:20:48+00:00] INFO: Loading cookbooks [venkat@0.1.0]
+Synchronizing Cookbooks:
+[2017-08-03T05:20:48+00:00] INFO: Storing updated cookbooks/venkat/files/default/index.html in the cache.
+[2017-08-03T05:20:48+00:00] INFO: Storing updated cookbooks/venkat/recipes/default.rb in the cache.
+[2017-08-03T05:20:48+00:00] INFO: Storing updated cookbooks/venkat/README.md in the cache.
+[2017-08-03T05:20:48+00:00] INFO: Storing updated cookbooks/venkat/metadata.rb in the cache.
+[2017-08-03T05:20:48+00:00] INFO: Storing updated cookbooks/venkat/CHANGELOG.md in the cache.
+[2017-08-03T05:20:48+00:00] INFO: Storing updated cookbooks/venkat/files/default/.index.html.swp in the cache.
+  - venkat (0.1.0)
+Installing Cookbook Gems:
+Compiling Cookbooks...
+[2017-08-03T05:20:48+00:00] INFO: HTTP Request Returned 404 Not Found:
+Converging 3 resources
+Recipe: venkat::default
+  * yum_package[httpd] action install[2017-08-03T05:20:48+00:00] INFO: Processing yum_package[httpd] action install (venkat::default line 10)
+[2017-08-03T05:20:49+00:00] INFO: yum_package[httpd] installing httpd-2.2.32-1.9.amzn1 from amzn-updates repository
+[2017-08-03T05:20:53+00:00] INFO: yum_package[httpd] installed httpd at 2.2.32-1.9.amzn1
+
+    - install version 2.2.32-1.9.amzn1 of package httpd
+  * service[httpd] action start[2017-08-03T05:20:53+00:00] INFO: Processing service[httpd] action start (venkat::default line 13)
+[2017-08-03T05:20:53+00:00] INFO: service[httpd] started
+
+    - start service service[httpd]
+  * cookbook_file[/var/www/html/index.html] action create[2017-08-03T05:20:53+00:00] INFO: Processing cookbook_file[/var/www/html/index.html] action create (venkat::default line 16)
+[2017-08-03T05:20:53+00:00] INFO: cookbook_file[/var/www/html/index.html] created file /var/www/html/index.html
+
+    - create new file /var/www/html/index.html[2017-08-03T05:20:53+00:00] INFO: cookbook_file[/var/www/html/index.html] updated file contents /var/www/html/index.html
+
+    - update content in file /var/www/html/index.html from none to 1faaba
+    --- /var/www/html/index.html        2017-08-03 05:20:53.631625834 +0000
+    +++ /var/www/html/.chef-index20170803-3609-1l7ftgc.html     2017-08-03 05:20:53.631625834 +0000
+    @@ -1 +1,2 @@
+    +<html><head><h1>welcomt </h1></head></html>
+[2017-08-03T05:20:54+00:00] INFO: Chef Run complete in 5.562224425 seconds
+
+Running handlers:
+[2017-08-03T05:20:54+00:00] INFO: Running report handlers
+Running handlers complete
+[2017-08-03T05:20:54+00:00] INFO: Report handlers complete
+Chef Client finished, 3/3 resources updated in 06 seconds
+[2017-08-03T05:20:54+00:00] INFO: Sending resource update report (run-id: c9514877-fc5a-4195-96cd-8ea88c7b72cb)
+[root@node4 ~]# service httpd status
+httpd (pid  3998) is running...
+[root@node4 ~]# netstat -natpal | grep httpd
+tcp        0      0 :::80                       :::*                        LISTEN      3998/httpd
+[root@node4 ~]# vi /etc/httpd/conf/httpd.conf
+[root@node4 ~]# ping inc.om
+ping: unknown host inc.om
+[root@node4 ~]# ping in.com
+PING in.com (124.153.64.218) 56(84) bytes of data.
+64 bytes from 124.153.64.218: icmp_seq=1 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=2 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=3 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=4 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=5 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=6 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=7 ttl=233 time=257 ms
+64 bytes from 124.153.64.218: icmp_seq=8 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=9 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=10 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=11 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=12 ttl=233 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=13 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=14 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=15 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=16 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=17 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=18 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=19 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=20 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=21 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=22 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=23 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=24 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=25 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=26 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=27 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=28 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=29 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=30 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=31 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=32 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=33 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=34 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=35 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=36 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=37 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=38 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=39 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=40 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=41 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=42 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=43 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=44 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=45 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=46 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=47 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=48 ttl=233 time=255 ms
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Thu Aug  3 05:17:16 2017 from 34.224.91.145
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2017.03-release-notes/
+1 package(s) needed for security, out of 3 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@node4 ~]$ sudo -i
+[root@node4 ~]# chef-client
+[2017-08-03T05:43:41+00:00] INFO: Forking chef instance to converge...
+Starting Chef Client, version 12.21.3
+[2017-08-03T05:43:41+00:00] INFO: *** Chef 12.21.3 ***
+[2017-08-03T05:43:41+00:00] INFO: Platform: x86_64-linux
+[2017-08-03T05:43:41+00:00] INFO: Chef-client pid: 4138
+[2017-08-03T05:43:41+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2017-08-03T05:43:43+00:00] INFO: Run List is [recipe[venkat]]
+[2017-08-03T05:43:43+00:00] INFO: Run List expands to [venkat]
+[2017-08-03T05:43:43+00:00] INFO: Starting Chef Run for node4
+[2017-08-03T05:43:43+00:00] INFO: Running start handlers
+[2017-08-03T05:43:43+00:00] INFO: Start handlers complete.
+[2017-08-03T05:43:43+00:00] INFO: HTTP Request Returned 404 Not Found:
+[2017-08-03T05:43:43+00:00] INFO: Error while reporting run start to Data Collector. URL: https://api.chef.io/organizations/guttula/data-collector Exception: 404 -- 404 "Not Found"  (This is normal if you do not have Chef Automate)
+resolving cookbooks for run list: ["venkat"]
+[2017-08-03T05:43:43+00:00] INFO: Loading cookbooks [venkat@0.1.0]
+Synchronizing Cookbooks:
+[2017-08-03T05:43:43+00:00] INFO: Storing updated cookbooks/venkat/templates/default/httpd.conf.erb in the cache.
+[2017-08-03T05:43:43+00:00] INFO: Storing updated cookbooks/venkat/recipes/default.rb in the cache.
+[2017-08-03T05:43:43+00:00] INFO: Storing updated cookbooks/venkat/attributes/default.rb in the cache.
+  - venkat (0.1.0)
+Installing Cookbook Gems:
+Compiling Cookbooks...
+[2017-08-03T05:43:43+00:00] INFO: HTTP Request Returned 404 Not Found:
+Converging 4 resources
+Recipe: venkat::default
+  * yum_package[httpd] action install[2017-08-03T05:43:43+00:00] INFO: Processing yum_package[httpd] action install (venkat::default line 10)
+ (up to date)
+  * service[httpd] action start[2017-08-03T05:43:44+00:00] INFO: Processing service[httpd] action start (venkat::default line 13)
+ (up to date)
+  * cookbook_file[/var/www/html/index.html] action create[2017-08-03T05:43:44+00:00] INFO: Processing cookbook_file[/var/www/html/index.html] action create (venkat::default line 16)
+ (up to date)
+  * template[/etc/httpd/conf/httpd.conf] action create[2017-08-03T05:43:44+00:00] INFO: Processing template[/etc/httpd/conf/httpd.conf] action create (venkat::default line 19)
+[2017-08-03T05:43:44+00:00] INFO: template[/etc/httpd/conf/httpd.conf] backed up to /var/chef/backup/etc/httpd/conf/httpd.conf.chef-20170803054344.654398
+[2017-08-03T05:43:44+00:00] INFO: template[/etc/httpd/conf/httpd.conf] updated file contents /etc/httpd/conf/httpd.conf
+
+    - update content in file /etc/httpd/conf/httpd.conf from 185e05 to 52793c
+    --- /etc/httpd/conf/httpd.conf      2017-06-21 19:10:42.000000000 +0000
+    +++ /etc/httpd/conf/.chef-httpd20170803-4138-190vti2.conf   2017-08-03 05:43:44.640201862 +0000
+    @@ -133,7 +133,9 @@
+     # prevent Apache from glomming onto all bound IP addresses (0.0.0.0)
+     #
+     #Listen 12.34.56.78:80
+    -Listen 80
+    +#Listen 80
+    +Listen 82
+    +
+
+     #
+     # Dynamic Shared Object (DSO) Support
+[2017-08-03T05:43:44+00:00] INFO: Chef Run complete in 1.573083511 seconds
+
+Running handlers:
+[2017-08-03T05:43:44+00:00] INFO: Running report handlers
+Running handlers complete
+[2017-08-03T05:43:44+00:00] INFO: Report handlers complete
+Chef Client finished, 1/4 resources updated in 02 seconds
+[2017-08-03T05:43:44+00:00] INFO: Sending resource update report (run-id: 6b43f5e1-770d-4c6f-a348-66fdef2efed2)
+[root@node4 ~]# ping in.com
+PING in.com (124.153.64.218) 56(84) bytes of data.
+64 bytes from 124.153.64.218: icmp_seq=1 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=2 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=3 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=4 ttl=233 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=5 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=6 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=7 ttl=233 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=8 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=9 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=10 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=11 ttl=233 time=254 ms
+64 bytes from 124.153.64.218: icmp_seq=17 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=18 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=19 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=20 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=21 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=22 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=23 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=24 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=25 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=26 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=27 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=28 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=29 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=30 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=31 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=32 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=33 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=34 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=35 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=36 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=37 ttl=230 time=257 ms
+64 bytes from 124.153.64.218: icmp_seq=38 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=39 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=40 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=41 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=42 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=43 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=44 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=45 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=46 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=47 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=48 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=49 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=50 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=51 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=52 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=53 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=54 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=55 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=56 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=57 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=58 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=59 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=60 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=61 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=62 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=63 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=64 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=65 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=66 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=67 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=68 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=69 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=70 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=71 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=72 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=73 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=74 ttl=230 time=257 ms
+64 bytes from 124.153.64.218: icmp_seq=75 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=76 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=77 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=78 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=79 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=80 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=81 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=82 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=83 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=84 ttl=230 time=257 ms
+64 bytes from 124.153.64.218: icmp_seq=85 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=86 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=87 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=88 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=89 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=90 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=91 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=92 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=93 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=94 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=95 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=96 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=97 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=98 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=99 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=100 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=101 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=102 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=103 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=104 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=105 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=106 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=107 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=108 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=109 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=110 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=111 ttl=230 time=255 ms
+^C
+--- in.com ping statistics ---
+111 packets transmitted, 106 received, 4% packet loss, time 110218ms
+rtt min/avg/max/mdev = 254.228/255.712/257.934/0.882 ms
+[root@node4 ~]# service httpd restart
+Stopping httpd:                                            [  OK  ]
+Starting httpd: httpd: apr_sockaddr_info_get() failed for node4
+httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+                                                           [  OK  ]
+[root@node4 ~]# ping in.com
+PING in.com (124.153.64.218) 56(84) bytes of data.
+64 bytes from 124.153.64.218: icmp_seq=1 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=2 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=3 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=4 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=5 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=6 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=7 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=8 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=9 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=10 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=11 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=12 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=13 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=14 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=15 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=16 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=17 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=18 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=19 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=20 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=21 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=22 ttl=230 time=256 ms
+64 bytes from 124.153.64.218: icmp_seq=23 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=24 ttl=230 time=255 ms
+64 bytes from 124.153.64.218: icmp_seq=25 ttl=230 time=256 ms
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Thu Aug  3 05:43:28 2017 from 183.82.180.140
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2017.03-release-notes/
+1 package(s) needed for security, out of 3 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@node4 ~]$ sudo -i
+[root@node4 ~]# history
+    1  chef-client
+    2  ping in.com
+    3  chef-client
+    4  ls
+    5  chef-client
+    6  ls
+    7  cd /var/www/html/
+    8  service httpd status
+    9  ping in.com
+   10  chef-client
+   11  service httpd status
+   12  netstat -natpal | grep httpd
+   13  vi /etc/httpd/conf/httpd.conf
+   14  ping inc.om
+   15  ping in.com
+   16  history
+[root@node4 ~]#

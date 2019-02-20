@@ -1,0 +1,39 @@
+[root@workstation cookbooks]# scp -i /root/chef1key.pem -r ec2-user@184.72.78.92:/etc/httpd/conf/httpd.conf mounika1/templates/default/
+httpd.conf  
+
+
+
+recipe:
+--------------
+package 'httpd' do
+        action :install
+end
+service 'httpd' do
+        action :start
+end
+cookbook_file '/var/www/html/index.html' do
+        source 'index.html'
+end
+template '/etc/httpd/conf/httpd.conf' do
+        source 'httpd.conf.erb'
+end
+
+----------------------
+attribute:
+
+default["mounika1"]["Listen"] = "81"
+
+template
+vi webdemo/template/default/httpd.conf.erb
+
+#Listen 12.34.56.78:80
+#Listen 80
+Listen <%=node['mounika1']['Listen']%>
+
+---------------------
+
+client
+
+
+service iptable stop
+service httpd restart

@@ -1,0 +1,83 @@
+ first take one Aws Machine ubuntu (1.2 medium 4GB)
+
+Then Connect Ipaddress with Putty.   username :Ubuntu
+
+once login in putty
+
+chanfe sudo -i
+
+
+then do below process
+
+
+ 
+get package from   https://downloads.chef.io/chef-server/12.15.8
+
+
+wget https://packages.chef.io/files/stable/chef-server/12.15.8/ubuntu/16.04/chef-server-core_12.15.8-1_amd64.deb
+
+
+dpkg -i chef-server-core_12.15.8-1_amd64.deb
+
+
+chef-server-ctl reconfigure
+
+
+chef-server-ctl status
+
+
+
+Now Create organization
+
+ mkdir .chef
+
+
+cd .chef/
+
+
+chef-server-ctl user-create admin admin admin admin@testorg.com  password-f ~/.chef/admin.pem
+
+
+Note ::::::   Replace Your Emilid       admin@testorg.com
+
+
+chef-server-ctl org-create testorg "testorg.com"--association-user admin -f ~/.chef/testorg.pem
+
+
+---------------------------------------
+
+now  install GUI for chef-server
+
+ chef-server-ctl install opscode-manage
+
+
+opscode-manage-ctl reconfigure
+
+
+
+
+now press enter 
+
+
+Then Q  press
+
+type yes
+
+
+
+chef-server-ctl reconfiguration
+
+
+
+
+---output process-------------
+
+After go to Aws inbound rules set http 80,hhtps 443  Anywhere.
+
+now copy ipaddress browser it.....
+
+if any error in browser check Advance then processed
+
+
+
+

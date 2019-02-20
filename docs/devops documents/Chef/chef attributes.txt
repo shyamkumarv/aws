@@ -1,0 +1,52 @@
+chef attributes
+---------------->
+
+case node["platform"]
+when "ubuntu"
+default["package_name"] = "apache2"
+default["service_name"] = "apache2"
+default["document_root"] = "/var/www/html"
+
+when "amazon"
+default["package_name"] = "httpd"
+default["service_name"] = "httpd"
+default["document_root"] = "/var/www/html"
+end
+
+
+
+
+
+
+
+chef recipes 
+------------->
+
+package node["package_name"] do 
+	action :install
+end 
+ 
+service node["service_name"] do 
+	action [:enable, :start]
+end
+
+
+
+template "#{node["document_root"]}/index.html" do
+	source "nani.html.erb"
+end
+
+
+
+chef templates
+--------------->
+
+
+<html>
+<body>
+<head>
+WELCOME TO THE CHEF AGIAN
+</head>
+</body>
+</html>
+
